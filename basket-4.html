@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/mmenu-light.css">
+  <link rel="stylesheet" href="css/green.css" id="theme-link">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper">
+        <div class="header__wrap">
+          <div class="header__menu">
+            <button type="button" class="header__btn"></button>
+            <ul class="header__list">
+              <li class="header__item header__item--catalog"><a href="#">Каталог</a></li>
+              <li class="header__item"><a href="#">Скидки</a></li>
+              <li class="header__item"><a href="#">О магазине</a></li>
+              <li class="header__item header__item--active"><a href="#">Как купить</a></li>
+              <li class="header__item"><a href="#">Сервис</a></li>
+              <li class="header__item"><a href="#">Гарантии</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="header__logo">
+            <img src="img/images/logo.png" alt="logo">
+          </a>
+          <ul class="header__add">
+            <li><a href="#" data-hover="Контакты" class="header__link">Контакты</a></li>
+            <li><a href="#" data-hover="Доставка" class="header__link">Доставка</a></li>
+          </ul>
+          <a href="contacts.html" class="header__location">
+            <svg width="10" height="16" viewBox="0 0 10 16" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.28571 5.5C7.28571 4.16239 6.19475 3.07143 4.85714 3.07143C3.51953 3.07143 2.42857 4.16239 2.42857 5.5C2.42857 6.83761 3.51953 7.92857 4.85714 7.92857C6.19475 7.92857 7.28571 6.83761 7.28571 5.5ZM9.71429 5.5C9.71429 6.07868 9.64788 6.67634 9.40123 7.1981L5.9481 14.5407C5.74888 14.9581 5.3125 15.2143 4.85714 15.2143C4.40179 15.2143 3.9654 14.9581 3.77567 14.5407L0.313058 7.1981C0.0664062 6.67634 0 6.07868 0 5.5C0 2.81529 2.17243 0.642856 4.85714 0.642856C7.54185 0.642856 9.71429 2.81529 9.71429 5.5Z"></path>
+            </svg>
+            <span>Москва</span>
+          </a>
+          <div class="search">
+            <button type="button" class="search__open"></button>
+            <div class="search__wrap">
+              <div class="search__content">
+                <button type="button" class="search__close"></button>
+                <form action="#" class="search__form">
+                  <input type="text" class="search__input" placeholder="Поиск по сайту">
+                  <button type="submit" class="search__btn" title="Найти">
+                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="13.2929" cy="12.728" r="8" transform="rotate(-45 13.2929 12.728)" stroke-width="2"></circle>
+                      <path d="M19.071 18.5063L23.071 22.5063" stroke-width="2" stroke-linecap="round"></path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="search__dropdown">
+                <div class="search__drop">
+                  <ul class="search__list">
+                    <li class="search__item">
+                      <a href="#" class="search__link">
+                        <figure class="search__img">
+                          <img src="img/images/img-2.png" alt="Велокомпьютеры">
+                        </figure>
+                        <p class="search__title"><span>Аксессуары ></span><b>Велокомпьютеры</b></p>
+                      </a>
+                    </li>
+                    <li class="search__item">
+                      <a href="#" class="search__link">
+                        <figure class="search__img">
+                          <img src="img/images/img-3.png" alt="Велосипедные перчатки">
+                        </figure>
+                        <p class="search__title"><span>Летняя экипировка ></span><b>Велосипедные перчатки</b></p>
+                      </a>
+                    </li>
+                    <li class="search__item">
+                      <a href="#" class="search__link">
+                        <figure class="search__img">
+                          <img src="img/images/img-4.png" alt="Велосипедные шлемы">
+                        </figure>
+                        <p class="search__title"><span>Летняя экипировка ></span><b>Велосипедные шлемы</b></p>
+                      </a>
+                    </li>
+                    <li class="search__item">
+                      <a href="#" class="search__link">
+                        <figure class="search__img">
+                          <img src="img/images/img-1.png" alt="Велосипед">
+                        </figure>
+                        <p class="search__title"><b>Велосипед</b> MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA BIG.NINE LIMITED</p>
+                      </a>
+                    </li>
+                    <li class="search__item">
+                      <a href="#" class="search__link">
+                        <figure class="search__img">
+                          <img src="img/images/img-1.png" alt="Велосипед">
+                        </figure>
+                        <p class="search__title"><b>Велосипед</b> MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA BIG.NINE LIMITED</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="search__bottom">
+                    <a href="#" class="btn search__all">Все результаты поиска</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a data-fancybox="" data-src="#call" href="javascript:;" class="header__call">
+            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7857 9.52232C11.7857 9.82366 11.6518 10.4096 11.5262 10.6858C11.3504 11.096 10.8817 11.3638 10.505 11.5731C10.0112 11.841 9.50893 12 8.9481 12C8.16964 12 7.46652 11.6819 6.75502 11.4224C6.24442 11.2383 5.75056 11.0123 5.29018 10.7277C3.86719 9.84877 2.15123 8.13281 1.27232 6.70982C0.987723 6.24944 0.761719 5.75558 0.577567 5.24498C0.31808 4.53348 0 3.83036 0 3.0519C0 2.49107 0.15904 1.98884 0.426897 1.49498C0.636161 1.1183 0.904018 0.649553 1.31417 0.473772C1.5904 0.348214 2.17634 0.214285 2.47768 0.214285C2.53627 0.214285 2.59487 0.214285 2.65346 0.239397C2.82924 0.297991 3.01339 0.708147 3.0971 0.875558C3.36496 1.35268 3.62444 1.83817 3.90067 2.30692C4.0346 2.52455 4.28571 2.79241 4.28571 3.0519C4.28571 3.5625 2.77065 4.30748 2.77065 4.75949C2.77065 4.98549 2.97991 5.27846 3.0971 5.47935C3.94252 7.00279 4.99721 8.05748 6.52065 8.9029C6.72154 9.02009 7.01451 9.22935 7.24051 9.22935C7.69252 9.22935 8.4375 7.71429 8.9481 7.71429C9.20759 7.71429 9.47545 7.9654 9.69308 8.09933C10.1618 8.37556 10.6473 8.63504 11.1244 8.9029C11.2919 8.98661 11.702 9.17076 11.7606 9.34654C11.7857 9.40513 11.7857 9.46373 11.7857 9.52232Z"></path>
+            </svg>
+          </a>
+          <ul class="header__contacts">
+            <li><a href="tel:+78003503236" data-hover="8 800 350-32-36" class="header__phone">8 800 350-32-36</a></li>
+          </ul>
+          <a href="#" class="header__cabinet" title="Личный кабинет">
+            <svg width="26" height="26" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.1924 3.8076C19.737 1.35225 16.4724 0 13 0C9.52744 0 6.26295 1.35225 3.8076 3.8076C1.35225 6.26295 0 9.52744 0 13C0 16.4724 1.35225 19.737 3.8076 22.1924C6.26295 24.6478 9.52744 26 13 26C16.4724 26 19.737 24.6478 22.1924 22.1924C24.6478 19.737 26 16.4724 26 13C26 9.52744 24.6478 6.26295 22.1924 3.8076ZM6.51726 22.465C7.06097 19.3344 9.7738 17.0252 13 17.0252C16.2264 17.0252 18.939 19.3344 19.4827 22.465C17.637 23.7331 15.4038 24.4766 13 24.4766C10.5962 24.4766 8.36304 23.7331 6.51726 22.465ZM8.86649 11.3683C8.86649 9.08885 10.7208 7.23474 13 7.23474C15.2792 7.23474 17.1335 9.08905 17.1335 11.3683C17.1335 13.6475 15.2792 15.5018 13 15.5018C10.7208 15.5018 8.86649 13.6475 8.86649 11.3683ZM20.8023 21.4083C20.3922 19.9509 19.578 18.6286 18.4366 17.5957C17.7363 16.9619 16.9393 16.4619 16.0824 16.1094C17.6312 15.0991 18.6572 13.3513 18.6572 11.3683C18.6572 8.24898 16.1193 5.7113 13 5.7113C9.88072 5.7113 7.34305 8.24898 7.34305 11.3683C7.34305 13.3513 8.36899 15.0991 9.91762 16.1094C9.06088 16.4619 8.26366 16.9617 7.56343 17.5955C6.42224 18.6284 5.60776 19.9507 5.19774 21.4081C2.93936 19.3108 1.52344 16.3178 1.52344 13C1.52344 6.67178 6.67178 1.52344 13 1.52344C19.3282 1.52344 24.4766 6.67178 24.4766 13C24.4766 16.318 23.0606 19.311 20.8023 21.4083Z"></path>
+              <path d="M22.1924 3.8076C19.737 1.35225 16.4724 0 13 0C9.52744 0 6.26295 1.35225 3.8076 3.8076C1.35225 6.26295 0 9.52744 0 13C0 16.4724 1.35225 19.737 3.8076 22.1924C6.26295 24.6478 9.52744 26 13 26C16.4724 26 19.737 24.6478 22.1924 22.1924C24.6478 19.737 26 16.4724 26 13C26 9.52744 24.6478 6.26295 22.1924 3.8076ZM6.51726 22.465C7.06097 19.3344 9.7738 17.0252 13 17.0252C16.2264 17.0252 18.939 19.3344 19.4827 22.465C17.637 23.7331 15.4038 24.4766 13 24.4766C10.5962 24.4766 8.36304 23.7331 6.51726 22.465ZM8.86649 11.3683C8.86649 9.08885 10.7208 7.23474 13 7.23474C15.2792 7.23474 17.1335 9.08905 17.1335 11.3683C17.1335 13.6475 15.2792 15.5018 13 15.5018C10.7208 15.5018 8.86649 13.6475 8.86649 11.3683ZM20.8023 21.4083C20.3922 19.9509 19.578 18.6286 18.4366 17.5957C17.7363 16.9619 16.9393 16.4619 16.0824 16.1094C17.6312 15.0991 18.6572 13.3513 18.6572 11.3683C18.6572 8.24898 16.1193 5.7113 13 5.7113C9.88072 5.7113 7.34305 8.24898 7.34305 11.3683C7.34305 13.3513 8.36899 15.0991 9.91762 16.1094C9.06088 16.4619 8.26366 16.9617 7.56343 17.5955C6.42224 18.6284 5.60776 19.9507 5.19774 21.4081C2.93936 19.3108 1.52344 16.3178 1.52344 13C1.52344 6.67178 6.67178 1.52344 13 1.52344C19.3282 1.52344 24.4766 6.67178 24.4766 13C24.4766 16.318 23.0606 19.311 20.8023 21.4083Z"></path>
+            </svg>
+          </a>
+          <div class="cart">
+            <a href="#" class="cart__page" title="Корзина">
+              <svg width="28" height="27" viewBox="0 0 28 27" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 1.80003C0 1.28457 0.417867 0.866699 0.933333 0.866699H3.73333C4.16161 0.866699 4.53493 1.15818 4.6388 1.57367L5.39539 4.60003H27.0667C27.3541 4.60003 27.6254 4.73244 27.8023 4.95898C27.9792 5.18551 28.0418 5.48091 27.9721 5.75973L25.1721 16.9597C25.0683 17.3752 24.6949 17.6667 24.2667 17.6667H7.46666C7.03839 17.6667 6.66507 17.3752 6.5612 16.9597L3.00461 2.73337H0.933333C0.417867 2.73337 0 2.3155 0 1.80003ZM5.86206 6.4667L8.19539 15.8H23.5379L25.8713 6.4667H5.86206ZM9.33333 21.4C8.3024 21.4 7.46666 22.2358 7.46666 23.2667C7.46666 24.2976 8.3024 25.1334 9.33333 25.1334C10.3643 25.1334 11.2 24.2976 11.2 23.2667C11.2 22.2358 10.3643 21.4 9.33333 21.4ZM5.6 23.2667C5.6 21.2048 7.27147 19.5334 9.33333 19.5334C11.3952 19.5334 13.0667 21.2048 13.0667 23.2667C13.0667 25.3286 11.3952 27 9.33333 27C7.27147 27 5.6 25.3286 5.6 23.2667ZM22.4 21.4C21.3691 21.4 20.5333 22.2358 20.5333 23.2667C20.5333 24.2976 21.3691 25.1334 22.4 25.1334C23.4309 25.1334 24.2667 24.2976 24.2667 23.2667C24.2667 22.2358 23.4309 21.4 22.4 21.4ZM18.6667 23.2667C18.6667 21.2048 20.3381 19.5334 22.4 19.5334C24.4619 19.5334 26.1333 21.2048 26.1333 23.2667C26.1333 25.3286 24.4619 27 22.4 27C20.3381 27 18.6667 25.3286 18.6667 23.2667Z"></path>
+              </svg>
+              <span class="cart__number">7</span>
+            </a>
+            <div class="cart__dropdown">
+              <table class="cart__table">
+                <tr>
+                  <td>
+                    <a href="#" class="cart__img">
+                      <img src="img/images/img-1.png" alt="Велосипед">
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="cart__title">Велосипед MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA</a>
+                  </td>
+                  <td>× 2</td>
+                  <td>79 990 ₽</td>
+                  <td>
+                    <a href="#" class="cart__delete">
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.44957 12L0.0583232 9.89408L9.59417 0L12 2.10592L2.44957 12ZM9.53584 12L0 2.10592L2.39125 0L11.9271 9.89408L9.53584 12Z"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="cart__img">
+                      <img src="img/images/img-1.png" alt="Велосипед">
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="cart__title">Велосипед MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA</a>
+                  </td>
+                  <td>× 2</td>
+                  <td>79 990 ₽</td>
+                  <td>
+                    <a href="#" class="cart__delete">
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.44957 12L0.0583232 9.89408L9.59417 0L12 2.10592L2.44957 12ZM9.53584 12L0 2.10592L2.39125 0L11.9271 9.89408L9.53584 12Z"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="cart__img">
+                      <img src="img/images/img-1.png" alt="Велосипед">
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="cart__title">Велосипед MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA</a>
+                  </td>
+                  <td>× 2</td>
+                  <td>79 990 ₽</td>
+                  <td>
+                    <a href="#" class="cart__delete">
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.44957 12L0.0583232 9.89408L9.59417 0L12 2.10592L2.44957 12ZM9.53584 12L0 2.10592L2.39125 0L11.9271 9.89408L9.53584 12Z"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="cart__img">
+                      <img src="img/images/img-1.png" alt="Велосипед">
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="cart__title">Велосипед MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA</a>
+                  </td>
+                  <td>× 2</td>
+                  <td>79 990 ₽</td>
+                  <td>
+                    <a href="#" class="cart__delete">
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.44957 12L0.0583232 9.89408L9.59417 0L12 2.10592L2.44957 12ZM9.53584 12L0 2.10592L2.39125 0L11.9271 9.89408L9.53584 12Z"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="cart__img">
+                      <img src="img/images/img-1.png" alt="Велосипед">
+                    </a>
+                  </td>
+                  <td>
+                    <a href="#" class="cart__title">Велосипед MERIDA BIG.NINE LIMITED 2.0 2022  MERIDA</a>
+                  </td>
+                  <td>× 2</td>
+                  <td>79 990 ₽</td>
+                  <td>
+                    <a href="#" class="cart__delete">
+                      <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.44957 12L0.0583232 9.89408L9.59417 0L12 2.10592L2.44957 12ZM9.53584 12L0 2.10592L2.39125 0L11.9271 9.89408L9.53584 12Z"></path>
+                      </svg>
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              <p class="cart__total">Всего <b>1 759 990 ₽</b></p>
+              <div class="cart__bottom">
+                <a href="#" class="btn cart__btn">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <nav class="menu">
+        <div class="menu__block">
+          <div class="menu__wrap">
+            <a href="index.html" class="logo">
+              <img src="img/images/logo.png" alt="logo">
+            </a>
+            <div class="menu__selection">
+              <div class="menu__item menu__item--catalog">
+                <a href="#" class="menu__link">Каталог</a>  
+                <div class="header__dropmenu">
+                  <div class="menu__wrap__catalog">
+                      <div class="menu__left catalog__menu__col catalog__menu__col-1">
+                          <ul class="header__nav catalog__menu__col__item level-1" data-menu-level="1">
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="3" class="menu__sublink"><span>Велопарковки</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="8" class="menu__sublink menu__catalog--active"><span>Велосипеды</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="9" class="menu__sublink"><span>Самокаты</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="10" class="menu__sublink"><span>Аксесуары</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="11" class="menu__sublink"><span>Запчасти</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="12" class="menu__sublink"><span>Инструменты</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="57" class="menu__sublink"><span>Летняя экипировка</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="58" class="menu__sublink"><span>Одежда</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="59" class="menu__sublink"><span>Скандинавская ходьба</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="60" class="menu__sublink"><span>Лыжероллеры</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="61" class="menu__sublink"><span>Беговые лыжи</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="62" class="menu__sublink"><span>Ботинки для беговых лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="63" class="menu__sublink"><span>Крепления для беговых лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="64" class="menu__sublink"><span>Палки для беговых лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="65" class="menu__sublink"><span>Аксессуары для лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="66" class="menu__sublink"><span>Зимняя экипировка</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="67" class="menu__sublink"><span>Горные лыжи</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="68" class="menu__sublink"><span>Ботинки для горных лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service menu__line">
+                                <a href="" data-id="69" class="menu__sublink"><span>Палки для горных лыж</span></a>
+                            </li>
+                            <li class="menu__subitem menu__service">
+                                <a href="" data-id="70" class="menu__sublink"><span>Катание с горки</span></a>
+                            </li>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2" data-parent-id="3" data-menu-level="2">
+                          <p class="menu__title">Вид велосипеда</p>
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/antigraviynye-poliuretanovye-plenki/" class="menu__sublink" data-id="33">Беговые</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/antigraviynye-gibridnye-plenki/" class="menu__sublink" data-id="34">Детские</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/antigraviynye-plenki-pvkh/" class="menu__sublink" data-id="35">Горные</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/antiskolnye-plenki-dlya-stekla/" class="menu__sublink" data-id="36">Подростковые</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/zaschitnaya-plenka-dlya-far/" class="menu__sublink" data-id="37">Городские</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/instrumenty-dlya-antigraviynykh-plenok/" class="menu__sublink" data-id="38">Электро</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/zaschitnye-plenki-daytona/" class="menu__sublink" data-id="39">Гравийные / Туристические</a></li>
+                              <li class="menu__subitem"><a href="shop/antigraviynye-plenki/universalnye-zaschitnye-lenty/" class="menu__sublink" data-id="40">Складные</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="71">Шоссейные</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="72">BMX / Трюковые</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2 active" data-parent-id="8" data-menu-level="2">
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="41">Подкатегория велосипеды 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="89">Подкатегория велосипеды2</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="90">Подкатегория велосипеды 3</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="91">Подкатегория велосипеды 4</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="92">Подкатегория велосипеды 5</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2" data-parent-id="9" data-menu-level="2">
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="42">Подкатегория 2</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2" data-parent-id="10" data-menu-level="2">
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="43">Подкатегория 3</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2" data-parent-id="11" data-menu-level="2">
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="44">Подкатегория 4</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+                      <div class="header__sublist menu__sublist catalog__menu__col__item level-2" data-parent-id="12" data-menu-level="2">
+                          <ul class="menu__sublist" data-menu-level="2">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="45">Подкатегория 5</a></li>
+                              <ul></ul>
+                          </ul>
+                      </div>
+
+
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="33" data-menu-level="3">
+                          <div class="menu__column">
+                              <p class="menu__title">Назначение 1</p>
+                              <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Хардтейл</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Двухподвес</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Горный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Прогулочный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Фитнес</a>
+                                  </li>
+                                  <li class="menu__subitem menu__subitem--active">
+                                      <a href="#" class="menu__sublink">Спортивный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Кросс-кантри</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Trail / All mountain / Enduro</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">MTB</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Туристические</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="menu__column right">
+                              <p class="menu__title">Производитель 1</p>
+                              <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Scott</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Glant</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Trek</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Dogma</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Ghost</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Dewolt</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Look</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Stevena</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Merida</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">BMC</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Haro</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="34" data-menu-level="3">
+                          <div class="menu__column">
+                              <p class="menu__title">Назначение 2</p>
+                              <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Хардтейл</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Двухподвес</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Горный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Прогулочный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Фитнес</a>
+                                  </li>
+                                  <li class="menu__subitem menu__subitem--active">
+                                      <a href="#" class="menu__sublink">Спортивный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Кросс-кантри</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Trail / All mountain / Enduro</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">MTB</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Туристические</a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="menu__column right">
+                              <p class="menu__title">Производитель 2</p>
+                              <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Scott</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Glant</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Trek</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Dogma</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Ghost</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Dewolt</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Look</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Stevena</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Merida</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">BMC</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                      <a href="#" class="menu__sublink">Haro</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="35" data-menu-level="3">
+                         <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="86">горные 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="87">горные 2</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="88">горные 3</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="41" data-menu-level="3">
+                         <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="93">Подкатегория велосипеды 1 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="94">Подкатегория велосипеды 1 2</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="95">Подкатегория велосипеды 1 3</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="96">Подкатегория велосипеды 1 4</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="97">Подкатегория велосипеды 1 5</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="89" data-menu-level="3">
+                         <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="98">Подкатегория велосипеды 2 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="99">Подкатегория велосипеды 2 2</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="100">Подкатегория велосипеды 2 3</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="101">Подкатегория велосипеды 2 4</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="102">Подкатегория велосипеды 2 5</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="90" data-menu-level="3">
+                         <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="103">Подкатегория велосипеды 3 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="104">Подкатегория велосипеды 3 2</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="105">Подкатегория велосипеды 3 3</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="106">Подкатегория велосипеды 3 4</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="107">Подкатегория велосипеды 3 5</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="91" data-menu-level="3">
+                         <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="108">Подкатегория велосипеды 4 1</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="nav__blocks catalog__menu__col__item level-3" data-parent-id="92" data-menu-level="3">
+                        <div class="menu__column">
+                          <ul class="menu__sublist">
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="109">Подкатегория велосипеды 5 1</a></li>
+                              <li class="menu__subitem"><a href="" class="menu__sublink" data-id="110">Подкатегория велосипеды 5 2</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Велопарковки</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Велосипеды</a>  
+                  <div class="menu__dropdown">
+                    <div class="menu__field">
+                      <p class="menu__title">Велосипеды</p>
+                      <ul class="menu__sublist">
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Беговые</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Детские</a>
+                        </li>
+                        <li class="menu__subitem menu__subitem--active">
+                          <a href="#" class="menu__sublink">Горные</a>
+                          <div class="menu__drop">
+                            <div class="menu__columns menu__columns--velo">
+                              <div class="menu__column">
+                                <p class="menu__title">Назначение</p>
+                                <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Хардтейл</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Двухподвес</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Горный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Прогулочный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Фитнес</a>
+                                  </li>
+                                  <li class="menu__subitem menu__subitem--active">
+                                    <a href="#" class="menu__sublink">Спортивный</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Кросс-кантри</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Trail / All mountain / Enduro</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">MTB</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Туристические</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="menu__column right">
+                                <p class="menu__title">Производитель</p>
+                                <ul class="menu__sublist">
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Scott</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Glant</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Trek</a>
+                                  </li>
+                                  <li class="menu__subitem menu__subitem--active">
+                                    <a href="#" class="menu__sublink">Dogma</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Ghost</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Dewolt</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Look</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Stevena</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Merida</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">BMC</a>
+                                  </li>
+                                  <li class="menu__subitem">
+                                    <a href="#" class="menu__sublink">Haro</a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <div class="menu__column">
+                                <a href="#" class="menu__img">
+                                  <img src="img/images/menu-img.jpg" alt="Dogma">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Подростковые</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Городские</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Электро</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Гравийные / Туристические</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Складные</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">Шоссейные</a>
+                        </li>
+                        <li class="menu__subitem">
+                          <a href="#" class="menu__sublink">BMX / Трюковые</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Аксесуары</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Запчасти</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Экипировка</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Одежда</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" id="green" class="menu__show"></button>
+        </div>
+        <div class="menu__block menu__block--right menu__block--short">
+          <button type="button" id="blue" class="menu__show"></button>
+          <div class="menu__wrap">
+            <a href="index.html" class="logo">
+              <img src="img/images/logo2.png" alt="logo">
+            </a>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Аксесуары</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Запчасти</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Экипировка</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Одежда</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Ботинки</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Беговые лыжи</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <nav class="breadcrumbs">
+      <div class="wrapper">
+        <a href="#" class="breadcrumbs__link">Главная страница</a>
+        <a href="#" class="breadcrumbs__link">Личный кабинет</a>
+        <span class="breadcrumbs__link">Мои заказы</span>
+      </div>
+    </nav>
+    
+    <section class="basket">
+      <div class="wrapper">
+        <h1>Оформление заказа</h1>
+        <ul class="basket__steps">
+          <li class="basket__step basket__step--last"><a href="basket.html">Личные данные</a></li>
+          <li class="basket__step basket__step--last"><a href="basket-2.html">Доставка</a></li>
+          <li class="basket__step basket__step--last"><a href="basket-3.html">Оплата</a></li>
+          <li class="basket__step basket__step--active">Подтверждение</li>
+        </ul>
+        <form action="#" class="form">
+          <div class="basket__content">
+            <div class="delivery">
+              <p class="delivery__title">Давайте убедимся, что всё указано верно</p>
+              <div class="delivery__info">
+                <ul class="delivery__list">
+                  <li class="delivery__item">
+                    <div class="delivery__value">ФИО<span></span></div>
+                    <div class="delivery__text">Рюрик Иван Васильевич</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__value">E-Mail<span></span></div>
+                    <div class="delivery__text">vasiliy@yandex.ru</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__value">Телефон<span></span></div>
+                    <div class="delivery__text">+7 (935) 242-43-65</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__value">Регион<span></span></div>
+                    <div class="delivery__text">Россия — Москвв</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__value">Способ доставки<span></span></div>
+                    <div class="delivery__text">Самовывоз</div>
+                  </li>
+                  <li class="delivery__item">
+                    <div class="delivery__value">Способ оплаты<span></span></div>
+                    <div class="delivery__text">Наличными или картой при полученииё</div>
+                  </li>
+                </ul>
+                <div class="form__check">
+                  <input type="checkbox" id="checkbox2" class="checkbox" checked="">
+                  <label for="checkbox2" class="checkbox-label">Я хочу получать рассылку с новостями и акциями от магазина Velo-Port.ru</label>
+                </div>
+              </div>
+              <div class="basket__btns">
+                <a href="basket-3.html" class="btn btn--border basket__back">вЕРНУТЬСЯ НАЗАД</a>
+                <button type="submit" class="btn basket__next">Оформить заказ</button>
+              </div>
+            </div>
+            
+            <div class="basket__final basket__final--ready">
+              <table class="basket__result">
+                <tr>
+                  <td>
+                    <a href="#" class="basket__img">
+                      <img src="img/images/img-1.png" alt="Велосипед PRIDE Rocx Tour">
+                    </a>
+                  </td>
+                  <td>
+                    <p class="basket__title"><a href="#">Очки SCOTT Bass 2022 (0002032 Оправа [white] Линзы [brown])</a></p>
+                    <p class="basket__label">Размер велосипеда<span>192 см</span></p>
+                    <p class="basket__label">Цвет<span>Синий</span></p>
+                  </td>
+                  <td>25×</td>
+                  <td>2 065 595 ₽</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="basket__img">
+                      <img src="img/images/img-5.png" alt="Велосипед PRIDE Rocx Tour">
+                    </a>
+                  </td>
+                  <td>
+                    <p class="basket__title"><a href="#">Очки SCOTT Bass 2022 (0002032 Оправа [white] Линзы [brown])</a></p>
+                    <p class="basket__label">Размер велосипеда<span>192 см</span></p>
+                    <p class="basket__label">Цвет<span>Синий</span></p>
+                  </td>
+                  <td>25×</td>
+                  <td>2 065 595 ₽</td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" class="basket__img">
+                      <img src="img/images/img-1.png" alt="Велосипед PRIDE Rocx Tour">
+                    </a>
+                  </td>
+                  <td>
+                    <p class="basket__title"><a href="#">Очки SCOTT Bass 2022 (0002032 Оправа [white] Линзы [brown])</a></p>
+                    <p class="basket__label">Размер велосипеда<span>192 см</span></p>
+                    <p class="basket__label">Цвет<span>Синий</span></p>
+                  </td>
+                  <td>25×</td>
+                  <td>2 065 595 ₽</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><p class="basket__title">Доставка заказа</p></td>
+                  <td>25×</td>
+                  <td>2 065 595 ₽</td>
+                </tr>
+              </table>
+              <p class="basket__sum">Итого:<b>30 022 490 ₽</b></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    
+    <section class="service">
+      <div class="wrapper">
+        <ul class="service__list">
+          <li class="service__item">
+            <figure class="service__img">
+              <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.05" x="1" y="1" width="117" height="117" rx="58.5" fill="url(#paint0_linear_1906_10689)" stroke="#FE1F3D" stroke-width="2"></rect>
+                <path opacity="0.9" d="M93.0793 54.7681H90.688L87.1239 56.6434C86.7227 56.4221 86.3055 56.2345 85.8555 56.1217L81.3721 54.9999V54.4901C83.3555 53.1058 84.5657 50.8189 84.5657 48.3829V46.5227C84.5657 42.3885 81.3264 38.9288 77.345 38.8083C77.1429 38.8031 76.9439 38.8104 76.7438 38.8202L77.9062 36.0989L72.2708 30.4651L68.9489 32.6273C67.6867 31.9165 66.3518 31.3631 64.9654 30.9749L64.1449 27.099H56.0346L55.2141 30.9759C53.8277 31.3641 52.4917 31.9175 51.2306 32.6284L47.9086 30.4662L42.278 36.0969L43.4206 38.8202C43.377 38.8182 43.3354 38.8104 43.2917 38.8093C41.2538 38.7501 39.3343 39.4937 37.8762 40.9091C36.416 42.3236 35.6127 44.2218 35.6127 46.2545V48.3829C35.6127 50.8189 36.8219 53.1048 38.8053 54.4891V54.9999L35.8808 55.731L30.5801 52.6397H27.0991V74.6911L37.5686 78.1804H39.6076L39.8622 77.2888L43.0714 79.215C43.1239 80.9599 44.5233 82.364 46.2666 82.4253C46.3279 84.1614 47.7231 85.5566 49.4592 85.6179C49.5205 87.3539 50.9157 88.7491 52.6518 88.8105C52.7152 90.5871 54.1701 92.015 55.9613 92.015C56.6264 92.015 57.2786 91.8077 57.8268 91.4382L58.7694 92.2707C59.3602 92.7908 60.1209 93.0792 60.9108 93.0792H61.1077C62.8786 93.0792 64.3195 91.6476 64.3419 89.8825C66.0935 89.8601 67.5121 88.4415 67.5344 86.6899C69.2871 86.6675 70.7068 85.2469 70.727 83.4942C72.4958 83.4526 73.9238 82.0075 73.9238 80.2288C73.9238 80.1218 73.9186 80.0163 73.9077 79.9098L93.0793 70.3247V54.7681ZM82.4374 46.5227V48.3829C82.4374 50.2718 81.4168 52.0364 79.7737 52.9879L79.2416 53.2955L79.2458 56.6632L84.5626 57.9914L72.8596 64.151V61.2842C72.8596 59.8537 72.2818 58.5437 71.3355 57.5757L74.988 56.6632V53.2929L74.4569 52.9858C72.8149 52.0364 71.7954 50.2718 71.7954 48.3829V46.2545C71.7954 44.8032 72.3691 43.446 73.4119 42.4353C74.4538 41.4251 75.836 40.8806 77.2811 40.9367C80.124 41.0219 82.4374 43.5281 82.4374 46.5227ZM61.6938 63.3144L56.8764 61.7748C54.6809 61.0712 52.3047 60.9662 50.0573 61.464L49.4473 61.5991V61.2842C49.4473 59.8168 50.4423 58.5427 51.8651 58.1862L57.9608 56.6632V53.2929L57.4298 52.9858C55.7877 52.0364 54.7682 50.2718 54.7682 48.3829V46.2545C54.7682 44.8032 55.3419 43.446 56.3848 42.4353C57.4267 41.4251 58.8177 40.8806 60.2539 40.9367C63.0968 41.0219 65.4102 43.5281 65.4102 46.5227V48.3829C65.4102 50.2718 64.3897 52.0364 62.7466 52.9879L62.2145 53.2955L62.2187 56.6632L68.3134 58.1862C69.7361 58.5427 70.7312 59.8168 70.7312 61.2842V65.2719L70.4683 65.4101H69.8161L63.2735 63.5405C62.758 63.3944 62.227 63.3347 61.6938 63.3144V63.3144ZM49.6858 43.0266C51.6842 39.1544 55.7067 36.6768 60.0892 36.6768C64.4302 36.6768 68.4355 39.1211 70.449 42.9409C69.9424 43.9567 69.667 45.0817 69.667 46.2545V48.3829C69.667 50.8189 70.8762 53.1048 72.8596 54.4891V54.9999L68.6028 56.0656L64.345 54.9999V54.4901C66.3284 53.1058 67.5386 50.8189 67.5386 48.3829V46.5227C67.5386 42.3885 64.2992 38.9288 60.3179 38.8083C58.2809 38.7485 56.3604 39.4926 54.9023 40.9081C53.4432 42.3236 52.6398 44.2218 52.6398 46.2545V48.3829C52.6398 50.8189 53.849 53.1048 55.8324 54.4891V54.9999L51.5756 56.0656L47.3178 54.9999V54.4901C49.3012 53.1058 50.5115 50.8189 50.5115 48.3829V46.5227C50.5115 45.2704 50.2101 44.0815 49.6858 43.0266V43.0266ZM44.7914 36.5905L48.1913 33.1906L51.1838 35.1382L51.7565 34.7869C53.1912 33.9077 54.7417 33.2639 56.3645 32.8757L57.0193 32.7188L57.7597 29.2274H62.4197L63.1581 32.7177L63.8129 32.8741C65.4357 33.2628 66.9862 33.9066 68.4209 34.7858L68.9936 35.1371L71.9861 33.1896L75.3819 36.5864L74.1748 39.4126C73.3532 39.766 72.5915 40.2632 71.9284 40.906C71.8848 40.9486 71.8473 40.9944 71.8047 41.038C69.2975 37.0525 64.8651 34.5484 60.0892 34.5484C55.279 34.5484 50.8341 37.0758 48.3332 41.1019C47.6639 40.4015 46.8678 39.834 45.9855 39.4375L44.7914 36.5905ZM40.9337 56.6632V53.2929L40.4026 52.9858C38.7606 52.0364 37.7411 50.2718 37.7411 48.3829V46.2545C37.7411 44.8032 38.3148 43.446 39.3576 42.4353C40.3995 41.4251 41.7848 40.8806 43.2268 40.9367C46.0697 41.0219 48.3831 43.5281 48.3831 46.5227V48.3829C48.3831 50.2718 47.3625 52.0364 45.7194 52.9879L45.1873 53.2955L45.1915 56.6632L48.8429 57.5757C47.8967 58.5437 47.3189 59.8537 47.3189 61.2842V62.0725L43.9995 62.8104L44.0857 62.509L44.1263 60.5422L38.5138 57.268L40.9337 56.6632ZM29.2275 54.7681H30.0033L37.6569 59.2322L33.795 74.6792L29.2275 73.1562V54.7681ZM37.9136 76.0521L35.819 75.3542L39.5707 60.3489L41.9979 61.7644V62.0684L38.003 76.0521H37.9136ZM45.1905 79.1158C45.1905 78.8019 45.3173 78.4943 45.5397 78.2719L47.4103 76.4012C47.6327 76.1788 47.9403 76.0521 48.2542 76.0521C48.912 76.0521 49.4473 76.5873 49.4473 77.2451C49.4473 77.559 49.3205 77.8666 49.0981 78.089L47.2274 79.9596C47.005 80.182 46.6974 80.3088 46.3835 80.3088C45.7257 80.3088 45.1905 79.7736 45.1905 79.1158ZM48.3831 82.3084C48.3831 81.9945 48.5098 81.6869 48.7322 81.4645L50.6029 79.5938C50.8253 79.3714 51.1329 79.2446 51.4468 79.2446C52.1046 79.2446 52.6398 79.7799 52.6398 80.4377C52.6398 80.7516 52.5131 81.0592 52.2907 81.2816L50.42 83.1522C50.1976 83.3746 49.89 83.5014 49.5761 83.5014C48.9183 83.5014 48.3831 82.9662 48.3831 82.3084ZM51.5756 85.501C51.5756 85.1871 51.7024 84.8795 51.9248 84.6571L53.7955 82.7864C54.0179 82.564 54.3255 82.4372 54.6394 82.4372C55.2972 82.4372 55.8324 82.9724 55.8324 83.6303C55.8324 83.9442 55.7056 84.2518 55.4832 84.4742L53.6126 86.3448C53.3902 86.5672 53.0826 86.694 52.7687 86.694C52.1109 86.694 51.5756 86.1588 51.5756 85.501ZM55.9613 89.8866C55.3035 89.8866 54.7682 89.3514 54.7682 88.6935C54.7682 88.3797 54.895 88.0721 55.1174 87.8497L56.9881 85.979C57.2105 85.7566 57.5181 85.6298 57.832 85.6298C58.4898 85.6298 59.025 86.165 59.025 86.8229C59.025 87.1367 58.8982 87.4444 58.6758 87.6668L56.8052 89.5374C56.5828 89.7598 56.2752 89.8866 55.9613 89.8866ZM61.1077 90.9508H60.9108C60.6395 90.9508 60.3797 90.8521 60.1776 90.6728L59.3815 89.9708L60.1807 89.1716C60.466 88.8863 60.6873 88.547 60.851 88.1827L61.8185 88.9882C62.0716 89.1991 62.2176 89.5099 62.2176 89.8409C62.2176 90.453 61.7198 90.9508 61.1077 90.9508V90.9508ZM70.6512 81.373H70.4672C70.2001 81.373 69.9393 81.2785 69.7351 81.107L63.9641 76.2978L62.6006 77.9336L68.2048 82.603C68.4568 82.814 68.6028 83.1247 68.6028 83.4557C68.6028 84.0678 68.105 84.5656 67.4929 84.5656H67.2606C67.0023 84.5656 66.7498 84.4742 66.5508 84.3079L60.7705 79.4915L59.407 81.1272L65.0111 85.7971C65.2642 86.0065 65.4102 86.3173 65.4102 86.6483C65.4102 87.2604 64.9124 87.7582 64.3003 87.7582C63.8919 87.7582 63.4938 87.6132 63.1805 87.3529L60.8053 85.3731C60.282 84.3037 59.2069 83.5581 57.9478 83.5134C57.8865 81.7773 56.4913 80.3821 54.7552 80.3208C54.6939 78.5847 53.2987 77.1895 51.5627 77.1282C51.5003 75.3516 50.0453 73.9237 48.2542 73.9237C47.3797 73.9237 46.5238 74.278 45.9055 74.8964L44.0348 76.7671C43.9231 76.8788 43.8306 77.0056 43.7365 77.1313L40.4676 75.1697L43.3333 65.1399L50.5177 63.5425C52.4024 63.1211 54.3894 63.2126 56.2273 63.8008L57.7951 64.3022L52.4803 66.9596C51.2659 67.5681 50.5115 68.7897 50.5115 70.148V70.3585C50.5115 72.3242 52.1109 73.9237 54.0766 73.9237C54.7225 73.9237 55.358 73.748 55.9104 73.4149L59.8731 71.0387C60.6691 70.5617 61.7375 70.6661 62.4249 71.2845L71.4166 79.3766C71.6572 79.5949 71.7954 79.9046 71.7954 80.2288C71.7954 80.8602 71.2825 81.373 70.6512 81.373V81.373ZM90.9509 69.009L73.0222 77.9742C72.964 77.9123 72.9032 77.8536 72.8393 77.7964L63.8492 69.7043C63.0615 68.9934 62.043 68.6027 60.9819 68.6027C60.2061 68.6027 59.4444 68.8136 58.7772 69.2138L54.8129 71.591C54.5905 71.7251 54.3364 71.7953 54.0766 71.7953C53.2837 71.7953 52.6398 71.1514 52.6398 70.3585V70.148C52.6398 69.5998 52.9443 69.1083 53.4338 68.8635L59.3701 65.8954C60.3859 65.3867 61.592 65.2729 62.6868 65.5878L69.3744 67.4979L70.9941 67.5385L90.9509 57.0347V69.009Z" stroke-width="0.5" class="service__svg service__svg--stroke"></path>
+                <defs>
+                <linearGradient id="paint0_linear_1906_10689" x1="59.5" y1="0" x2="59.5" y2="119" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#242538"></stop>
+                <stop offset="1" stop-color="#242538" stop-opacity="0.1"></stop>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <p class="service__title">Экспертная</p>
+            <p>помощь в подборе инвентаря.</p>
+            <a href="#" class="service__link">Подробнее</a>
+          </li>
+          <li class="service__item">
+            <figure class="service__img">
+              <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.05" x="1" y="1" width="117" height="117" rx="58.5" fill="url(#paint0_linear_1906_10678)" stroke="#FE1F3D" stroke-width="2"></rect>
+                <path d="M93.335 54.4408C91.0718 53.137 88.262 53.1374 86.002 54.442C85.9481 54.4732 85.895 54.5056 85.842 54.538C86.6036 50.4063 86.9212 45.8693 86.7904 40.9871C88.8622 40.5899 90.699 39.3101 91.7722 37.4513C93.077 35.1912 93.0774 32.3814 91.7732 30.1181C91.5361 29.7067 91.0973 29.4531 90.6225 29.4531C90.6221 29.4531 90.6217 29.4531 90.6214 29.4531C88.0092 29.4553 85.5761 30.8606 84.2712 33.1205C83.0241 35.2802 82.9694 37.9419 84.1053 40.1492C84.1415 41.0943 84.1605 42.0174 84.163 42.9186C82.7906 41.4321 80.8366 40.5515 78.77 40.5496C78.7696 40.5496 78.7692 40.5496 78.7688 40.5496C78.294 40.5496 77.855 40.8032 77.618 41.2148C76.314 43.478 76.3144 46.2878 77.619 48.5478C78.8506 50.6809 81.0876 52.0519 83.5313 52.201C82.8706 56.6543 81.7245 60.4281 80.2494 63.6548C79.6916 61.97 78.5321 60.5102 76.9554 59.5979C76.5439 59.3601 76.0366 59.3601 75.6251 59.5979C73.3641 60.906 71.9595 63.3397 71.9595 65.949C71.9595 68.292 73.0922 70.4926 74.96 71.8646C70.359 77.1216 64.8296 80.1434 60.3372 82.5983C60.2235 82.6605 60.1132 82.7209 60.0007 82.7824C59.8892 82.7214 59.777 82.6601 59.6641 82.5983C55.1714 80.1434 49.6416 77.1214 45.0403 71.8642C46.9078 70.4922 48.0404 68.2918 48.0404 65.949C48.0404 63.3397 46.6358 60.9059 44.3748 59.5979C43.9633 59.3601 43.4561 59.3601 43.0447 59.5979C41.468 60.5101 40.3087 61.9697 39.7508 63.6543C38.2755 60.4277 37.1296 56.654 36.4687 52.201C38.9125 52.0518 41.1494 50.6807 42.3809 48.5478C43.6856 46.288 43.686 43.478 42.3819 41.2148C42.1449 40.8032 41.706 40.5496 41.2311 40.5496C41.2307 40.5496 41.2303 40.5496 41.2299 40.5496C39.1632 40.5515 37.2091 41.4322 35.8368 42.9188C35.8392 42.0174 35.8582 41.0944 35.8944 40.1493C37.0302 37.9421 36.9757 35.2803 35.7287 33.1205C34.4241 30.8604 31.9908 29.4551 29.3788 29.453C29.3784 29.453 29.3781 29.453 29.3777 29.453C28.9029 29.453 28.4641 29.7065 28.2269 30.118C26.9228 32.3813 26.9232 35.1912 28.2279 37.4511C29.3012 39.31 31.1381 40.5899 33.2097 40.987C33.0788 45.8693 33.3966 50.4063 34.1583 54.538C34.1052 54.5055 34.0522 54.4731 33.9981 54.4419C31.7382 53.137 28.9284 53.1368 26.6651 54.4407C26.2533 54.678 25.9996 55.1173 26 55.5927C26.0023 58.2048 27.4076 60.6381 29.6674 61.9429C30.7976 62.5955 32.0653 62.9218 33.3337 62.9218C34.3421 62.9218 35.3508 62.7146 36.2907 62.302C37.5993 65.7683 39.3303 68.9252 41.4597 71.7195C42.2555 72.7638 43.0837 73.7313 43.9341 74.6322C41.3915 74.6938 39.0374 76.0849 37.759 78.2949C37.521 78.7064 37.521 79.2134 37.759 79.6249C39.0669 81.8859 41.5006 83.2907 44.1101 83.2907C46.5647 83.2907 48.8636 82.0475 50.2164 80.0182C52.6299 81.7152 55.041 83.0892 57.2668 84.3135C57.2618 84.3164 57.2564 84.3193 57.2515 84.3222C56.6187 84.6932 56.4064 85.5069 56.7774 86.1398C57.0247 86.5614 57.4684 86.7964 57.9244 86.7964C58.1525 86.7964 58.3838 86.7376 58.5948 86.6138C59.0418 86.3517 59.5121 86.0857 60.0006 85.8141C62.5606 87.2384 64.6707 88.5426 65.6287 89.9617C65.8853 90.3418 66.304 90.5469 66.7306 90.5469C66.9863 90.5469 67.2448 90.4732 67.4725 90.3194C68.0805 89.909 68.2407 89.0836 67.8302 88.4755C66.7634 86.8952 64.99 85.6319 62.7355 84.3129C64.9608 83.0889 67.3712 81.7154 69.784 80.0187C71.1368 82.0478 73.4353 83.2905 75.8899 83.2905C78.4996 83.2905 80.9332 81.8859 82.2411 79.6248C82.4791 79.2133 82.4791 78.7062 82.2411 78.2948C80.9627 76.0849 78.6092 74.694 76.0669 74.6321C76.9171 73.7312 77.7452 72.7638 78.5409 71.7195C80.6703 68.9252 82.4011 65.7683 83.7096 62.3019C84.6495 62.7145 85.6579 62.9216 86.6664 62.9216C87.9346 62.9216 89.2026 62.5952 90.3327 61.9426C92.5928 60.6378 93.998 58.2046 94 55.5924C94.0006 55.1173 93.7469 54.6781 93.335 54.4408ZM76.2902 62.3636C77.3385 63.2448 77.9646 64.5578 77.9646 65.9489C77.9646 67.34 77.3384 68.6531 76.2902 69.5343C75.242 68.6531 74.6159 67.3401 74.6159 65.9489C74.6159 64.5577 75.2421 63.2448 76.2902 62.3636ZM43.7098 62.3636C44.7581 63.2448 45.3842 64.5578 45.3842 65.9489C45.3842 67.3402 44.758 68.6531 43.7098 69.5343C42.6615 68.6531 42.0354 67.3401 42.0354 65.9489C42.0354 64.5577 42.6616 63.2448 43.7098 62.3636ZM37.1804 45.5451C37.876 44.3403 39.0748 43.5163 40.4232 43.2774C40.8904 44.5644 40.7762 46.0146 40.0807 47.2195C39.385 48.4244 38.1862 49.2484 36.8379 49.4873C36.3706 48.2001 36.4848 46.7499 37.1804 45.5451ZM30.5283 36.123C29.8327 34.9182 29.7185 33.4679 30.1857 32.1807C31.534 32.4196 32.7328 33.2436 33.4285 34.4485C34.124 35.6532 34.2382 37.1036 33.771 38.3908C32.4228 38.1518 31.2239 37.3279 30.5283 36.123ZM30.9954 59.6425C29.7905 58.947 28.9665 57.7481 28.7276 56.3998C30.0147 55.9324 31.4649 56.0466 32.6697 56.7423C33.8746 57.438 34.6986 58.6369 34.9375 59.9852C33.6505 60.452 32.2004 60.3382 30.9954 59.6425ZM44.1101 80.6344C42.7189 80.6344 41.4059 80.0082 40.5248 78.96C41.4059 77.9117 42.7189 77.2857 44.1101 77.2857C45.5014 77.2857 46.8144 77.9119 47.6955 78.96C46.8144 80.0082 45.5014 80.6344 44.1101 80.6344ZM86.5715 34.4485C87.2671 33.2436 88.466 32.4196 89.8143 32.1807C90.2815 33.4678 90.1673 34.9181 89.4718 36.123C88.7761 37.3279 87.5772 38.1518 86.229 38.3908C85.7618 37.1036 85.876 35.6534 86.5715 34.4485ZM83.1621 49.4873C81.8139 49.2484 80.6149 48.4244 79.9193 47.2195C79.2238 46.0148 79.1096 44.5646 79.577 43.2774C80.9251 43.5163 82.124 44.3403 82.8196 45.5451C83.5153 46.7499 83.6295 48.2001 83.1621 49.4873ZM79.4752 78.96C78.5941 80.0083 77.2812 80.6344 75.8899 80.6344C74.4987 80.6344 73.1857 80.0082 72.3047 78.96C73.1857 77.9117 74.4987 77.2857 75.8899 77.2857C77.2812 77.2857 78.5941 77.9117 79.4752 78.96ZM89.0047 59.6425C87.7999 60.3382 86.3496 60.4523 85.0625 59.9852C85.3015 58.6369 86.1254 57.4379 87.3302 56.7423C88.5351 56.0469 89.985 55.9326 91.2725 56.3998C91.0335 57.7481 90.2096 58.9469 89.0047 59.6425Z" class="service__svg"></path>
+                <path d="M58.2054 68.4826C58.6621 69.0003 59.3149 69.2977 59.9962 69.2982H59.9982C60.6766 69.2982 61.3273 69.0043 61.7848 68.4914C64.5338 65.4598 67.2849 62.298 69.9451 59.2407C71.2699 57.7182 72.6396 56.144 73.9854 54.6131C74.7616 53.7334 74.8208 52.4215 74.1332 51.4744L69.5334 44.5183C69.0822 43.8367 68.3354 43.4294 67.5346 43.4285H52.4631C51.6058 43.4285 50.8137 43.8936 50.3791 44.647L45.8069 51.5614C45.1785 52.5105 45.2633 53.7658 46.0107 54.6113L58.2054 68.4826ZM53.8948 54.2796L56.9292 63.008L49.2558 54.2796H53.8948ZM61.8478 46.0847L63.4054 51.6233H56.5924L58.1499 46.0847H61.8478ZM63.2908 54.2796L59.9989 63.7486L56.707 54.2796H63.2908ZM67.9412 57.4968C66.331 59.3473 64.6876 61.2362 63.0335 63.1087L66.1028 54.2796H70.7456C69.8037 55.3568 68.8615 56.4392 67.9412 57.4968ZM71.0473 51.6233H66.1647L64.6072 46.0847H67.3849L71.0473 51.6233ZM52.6129 46.0847H55.3905L53.833 51.6233H48.9503L52.6129 46.0847Z" class="service__svg"></path>
+                <path d="M53.2707 87.8907C52.5371 87.8907 51.9421 88.4855 51.9421 89.2189C51.9421 89.9523 52.5371 90.547 53.2707 90.547C54.0042 90.547 54.5988 89.9523 54.5988 89.2189C54.5988 88.4855 54.0041 87.8907 53.2707 87.8907Z" class="service__svg"></path>
+                <defs>
+                <linearGradient id="paint0_linear_1906_10678" x1="59.5" y1="0" x2="59.5" y2="119" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#242538"></stop>
+                <stop offset="1" stop-color="#242538" stop-opacity="0.1"></stop>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <p class="service__title">Предлагаем</p>
+            <p>только качественный ассортимент от мировых брендов</p>
+            <a href="#" class="service__link">Подробнее</a>
+          </li>
+          <li class="service__item">
+            <figure class="service__img">
+              <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.05" x="1" y="1" width="117" height="117" rx="58.5" fill="url(#paint0_linear_1906_10656)" stroke="#FE1F3D" stroke-width="2"></rect>
+                <path d="M45.3281 73.5362C44.5458 73.5362 43.9109 74.1711 43.9109 74.9534C43.9109 75.7357 44.5458 76.3706 45.3281 76.3706C46.1104 76.3706 46.7453 75.7357 46.7453 74.9534C46.7453 74.1711 46.1104 73.5362 45.3281 73.5362Z" class="service__svg service__svg--stroke" stroke-width="0.1"></path>
+                <path d="M85.543 48.9773L93.5997 40.9206C93.9386 40.5817 94.0752 40.09 93.96 39.6249C93.8447 39.1596 93.4942 38.7889 93.0362 38.6475L73.417 32.5922C71.6484 26.9073 66.3919 23.0009 60.3671 23.0009C54.7666 23.0009 49.7577 26.414 47.6847 31.5629L24.9601 38.6487C24.5033 38.7912 24.1541 39.1622 24.0397 39.6269C23.9253 40.0915 24.062 40.5823 24.4004 40.9207L32.669 49.1893L27.454 57.8812C27.2406 58.2368 27.2002 58.6701 27.3441 59.0591C27.4879 59.448 27.8006 59.7506 28.194 59.8817L35.7577 62.4028V83.4304C35.7577 84.0002 36.1113 84.5103 36.6449 84.7105C41.2697 86.4446 58.4532 92.8893 58.5455 92.922C58.8167 93.0175 59.1223 93.0305 59.4202 92.9341C59.4241 92.9328 59.4283 92.9319 59.4322 92.9306L84.0416 84.7275C84.5998 84.5414 84.9765 84.0188 84.9765 83.4304V61.8398L93.0426 59.305C93.4987 59.1617 93.8468 58.7907 93.9607 58.3264C94.0744 57.8621 93.9376 57.3721 93.5996 57.034L85.543 48.9773ZM74.039 36.6727C74.039 36.3253 74.0243 35.9787 73.9982 35.6333L90.0619 40.5914L83.24 47.4131L72.0936 43.698C73.3558 41.5883 74.039 39.1539 74.039 36.6727ZM50.0212 33.1142C51.5389 28.7007 55.6966 25.7352 60.3671 25.7352C65.3985 25.7352 69.7623 29.1384 70.9789 34.0111C71.1951 34.8769 71.3046 35.7724 71.3046 36.6727C71.3046 39.2121 70.4619 41.5923 68.8672 43.5568C66.7785 46.1328 63.6803 47.6102 60.3671 47.6102C56.7856 47.6102 53.4263 45.8523 51.3802 42.9066C50.1042 41.0737 49.4296 38.9179 49.4296 36.6727C49.4296 35.4517 49.6285 34.2544 50.0212 33.1142ZM27.9326 40.586L46.8408 34.6902C46.746 35.3434 46.6952 36.0051 46.6952 36.6726C46.6952 38.8739 47.2167 41.006 48.2106 42.9298L34.7598 47.4131L27.9326 40.586ZM30.6756 57.8265L34.9987 50.6212L56.9506 57.9385L52.6277 65.1439C50.2837 64.3625 33.1784 58.6607 30.6756 57.8265ZM57.6327 89.6608L38.4921 82.4831V63.3143C53.5517 68.3075 52.8163 68.1551 53.2356 68.1551C53.7056 68.1551 54.1557 67.9119 54.4082 67.4912L57.6327 62.1166V89.6608ZM58.9999 55.7394L38.7141 48.9776L49.7602 45.2957C52.3455 48.474 56.2375 50.3446 60.3671 50.3446C64.1873 50.3446 67.7777 48.7725 70.3601 46.0026L79.2857 48.9774L58.9999 55.7394ZM82.2421 82.4451L60.3671 89.7367V61.0777L65.2139 67.1357C65.5665 67.5764 66.1534 67.7549 66.6914 67.5859L82.2421 62.6992V82.4451V82.4451ZM66.7644 64.6969L61.2924 57.8574L83.24 50.5416L90.071 57.3726L66.7644 64.6969Z" class="service__svg"></path>
+                <path d="M54.0113 76.6209L50.9707 75.4807C50.2637 75.2157 49.4757 75.5738 49.2105 76.2807C48.9454 76.9878 49.3036 77.7759 50.0105 78.041L53.0512 79.1812C53.7596 79.4467 54.5467 79.0869 54.8114 78.3811C55.0765 77.6742 54.7183 76.886 54.0113 76.6209Z" class="service__svg"></path>
+                <path d="M54.0118 82.4614L45.8087 79.3853C45.1017 79.1202 44.3136 79.4784 44.0484 80.1853C43.7832 80.8923 44.1415 81.6805 44.8485 81.9456L53.0516 85.0218C53.2098 85.0811 53.3719 85.1093 53.5315 85.1093C54.0851 85.1093 54.606 84.7706 54.8119 84.2217C55.0771 83.5146 54.7189 82.7265 54.0118 82.4614Z" class="service__svg"></path>
+                <path d="M68.1697 31.6037C67.6358 31.0697 66.7701 31.0698 66.2361 31.6037L58.9997 38.8402L57.232 37.0726C56.6981 36.5387 55.8324 36.5387 55.2984 37.0726C54.7644 37.6065 54.7645 38.4722 55.2984 39.0062L58.0329 41.7405C58.5668 42.2743 59.4325 42.2743 59.9665 41.7405L68.1697 33.5373C68.7036 33.0034 68.7036 32.1377 68.1697 31.6037Z" class="service__svg"></path>
+                <defs>
+                <linearGradient id="paint0_linear_1906_10656" x1="59.5" y1="0" x2="59.5" y2="119" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#242538"></stop>
+                <stop offset="1" stop-color="#242538" stop-opacity="0.1"></stop>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <p class="service__title">Доставка</p>
+            <p>Доставка от одного дня<br>по Москве</p>
+            <a href="#" class="service__link">Подробнее</a>
+          </li>
+          <li class="service__item">
+            <figure class="service__img">
+              <svg width="119" height="119" viewBox="0 0 119 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect opacity="0.05" x="1" y="1" width="117" height="117" rx="58.5" fill="url(#paint0_linear_1906_10644)" stroke="#FE1F3D" stroke-width="2"></rect>
+                <path d="M31.1862 35.4121L35.121 42.2976C35.2538 42.5303 35.4759 42.6986 35.7357 42.7638L39.4067 43.6815L51.9974 56.2722L53.3886 54.8815L40.6008 42.0941C40.475 41.9678 40.3172 41.8784 40.1444 41.8351L36.617 40.9501L33.2669 35.0843L36.1391 32.2121L42.0074 35.5654L42.8928 39.0928C42.9357 39.266 43.0255 39.4242 43.1513 39.55L55.9391 52.3378L57.3299 50.9466L44.7392 38.3559L43.8214 34.6869C43.7563 34.4267 43.588 34.2042 43.3553 34.0711L36.4693 30.1366C36.0853 29.9181 35.6022 29.9829 35.289 30.2948L31.3545 34.2297C31.0381 34.5409 30.9693 35.0248 31.1862 35.4121V35.4121Z" class="service__svg service__svg--stroke" stroke-width="0.5"></path>
+                <path d="M72.0823 49.3864L50.442 71.0271L49.0508 69.6359L70.6915 47.9956L72.0823 49.3864Z" class="service__svg service__svg--stroke" stroke-width="0.5"></path>
+                <path d="M46.6543 71.7928C46.4762 71.4966 46.1565 71.3157 45.811 71.3157H39.9091C39.564 71.3157 39.2439 71.4966 39.0662 71.7928L36.1151 76.7109C35.9278 77.0225 35.9278 77.4121 36.1151 77.7241L39.0662 82.6423C39.2439 82.9381 39.564 83.1193 39.9091 83.1193H45.811C46.1565 83.1193 46.4762 82.9381 46.6543 82.6423L49.605 77.7241C49.7923 77.4121 49.7923 77.0225 49.605 76.7109L46.6543 71.7928ZM45.2546 81.1519H40.4659L38.1052 77.2175L40.4659 73.2827H45.2546L47.6153 77.2175L45.2546 81.1519Z" class="service__svg service__svg--stroke" stroke-width="0.5"></path>
+                <path d="M78.2722 53.6098C84.7688 53.6316 90.0536 48.3825 90.0754 41.8858C90.0787 40.8968 89.9573 39.9119 89.7141 38.9533C89.583 38.426 89.0492 38.1051 88.522 38.2362C88.3488 38.2795 88.191 38.369 88.0647 38.4948L81.9415 44.614L77.0833 42.9949L75.4631 38.1379L81.5863 32.0135C81.9703 31.6291 81.9699 31.0063 81.5855 30.6223C81.4588 30.4957 81.2994 30.4058 81.125 30.3629C74.8245 28.7674 68.4242 32.5812 66.8286 38.8813C66.5862 39.8371 66.4653 40.8195 66.4685 41.8057C66.4709 42.5802 66.5506 43.3523 66.7076 44.1106L45.1652 65.6526C44.4069 65.496 43.6348 65.4163 42.8607 65.4134C36.3414 65.4134 31.0566 70.6982 31.0566 77.2175C31.0566 83.7365 36.3414 89.0212 42.8607 89.0212C49.3797 89.0212 54.6644 83.7365 54.6644 77.2175C54.662 76.443 54.5819 75.6709 54.4253 74.9126L59.5825 69.7554L61.8381 72.0109C62.2225 72.3949 62.8448 72.3949 63.2293 72.0109L63.7209 71.5188C64.1523 71.0903 64.8495 71.0903 65.2808 71.5188C65.7118 71.9486 65.7126 72.6462 65.2829 73.0771C65.2825 73.0775 65.2816 73.0783 65.2808 73.0792L64.7892 73.5708C64.4052 73.9548 64.4052 74.5776 64.7892 74.9616L76.5233 86.6957C79.6095 89.8103 84.6361 89.8329 87.7507 86.7467C90.8649 83.6604 90.8876 78.6334 87.8013 75.5192C87.7847 75.5022 87.7677 75.4852 87.7507 75.4682L76.0166 63.7345C75.6326 63.3505 75.0099 63.3505 74.6259 63.7345L74.1342 64.2262C73.7024 64.6551 73.0056 64.6551 72.5739 64.2262C72.1433 63.7965 72.1421 63.0988 72.5718 62.6683C72.5727 62.6675 72.5735 62.6671 72.5739 62.6663L73.0659 62.1742C73.4499 61.7902 73.4499 61.1674 73.0659 60.7834L70.8104 58.5279L75.9677 53.3706C76.726 53.5272 77.4981 53.6073 78.2722 53.6098V53.6098ZM82.137 87.0542C81.4224 87.053 80.7138 86.9239 80.0449 86.6726L87.7273 78.9899C88.8866 82.0737 87.3266 85.5133 84.2428 86.6726C83.5699 86.9255 82.8565 87.055 82.137 87.0542ZM70.9933 61.4887C69.904 62.7881 70.0747 64.7247 71.3741 65.8136C72.516 66.7706 74.1803 66.7698 75.321 65.8108L86.3599 76.8594C86.4797 76.9796 86.5918 77.1062 86.7002 77.2349L78.29 85.6452C78.1609 85.5372 78.0342 85.4251 77.9141 85.3049L66.8667 74.2567C67.956 72.9574 67.7852 71.0207 66.4859 69.9318C65.344 68.9744 63.6792 68.9756 62.5385 69.9342L60.9648 68.3605L69.4192 59.9187L70.9933 61.4887ZM74.9654 51.5954L52.6509 73.9055C52.406 74.1499 52.3077 74.5047 52.3911 74.8402C53.7406 80.1399 50.5382 85.5303 45.2381 86.8794C39.9383 88.2289 34.548 85.0265 33.1985 79.7264C31.8494 74.4266 35.0518 69.0363 40.3519 67.6868C41.9551 67.2789 43.6348 67.2789 45.2381 67.6868C45.5735 67.7689 45.9276 67.6706 46.1728 67.4274L68.482 45.1169C68.7264 44.8725 68.8248 44.5177 68.7406 44.1826C67.4004 38.9448 70.5599 33.6123 75.7977 32.2717C76.7875 32.0188 77.8113 31.9217 78.831 31.9852L73.6421 37.1761C73.3787 37.4391 73.2865 37.8288 73.4042 38.182L75.3712 44.0843C75.4696 44.3776 75.7002 44.6083 75.994 44.7058L81.8962 46.6732C82.2491 46.791 82.6388 46.6991 82.9022 46.4361L88.091 41.2473C88.1028 41.435 88.1088 41.6208 88.1088 41.8057C88.1364 47.2106 83.7774 51.6144 78.3725 51.6423C77.5369 51.6464 76.7041 51.5436 75.8948 51.3364C75.5594 51.2527 75.2045 51.3506 74.9601 51.595H74.9654V51.5954Z" class="service__svg service__svg--stroke" stroke-width="0.5"></path>
+                <path d="M81.9198 79.4727L80.5286 80.8639L70.6924 71.0277L72.0832 69.6365L81.9198 79.4727Z" class="service__svg service__svg--stroke" stroke-width="0.5"></path>
+                <defs>
+                <linearGradient id="paint0_linear_1906_10644" x1="59.5" y1="0" x2="59.5" y2="119" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#242538"></stop>
+                <stop offset="1" stop-color="#242538" stop-opacity="0.1"></stop>
+                </linearGradient>
+                </defs>
+              </svg>
+            </figure>
+            <p class="service__title">Свой SKI сервис</p>
+            <p>Подготовка и обслуживание ваших лыж</p>
+            <a href="#" class="service__link">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrapper footer__wrap">
+        <div class="footer__info">
+          <div class="footer__logo">
+            <img src="img/images/logo-white.png" alt="logo">
+          </div>
+          <a href="tel:+74952550867" class="footer__phone">
+            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.7857 9.52232C11.7857 9.82366 11.6518 10.4096 11.5262 10.6858C11.3504 11.096 10.8817 11.3638 10.505 11.5731C10.0112 11.841 9.50893 12 8.9481 12C8.16964 12 7.46652 11.6819 6.75502 11.4224C6.24442 11.2383 5.75056 11.0123 5.29018 10.7277C3.86719 9.84877 2.15123 8.13281 1.27232 6.70982C0.987723 6.24944 0.761719 5.75558 0.577567 5.24498C0.31808 4.53348 0 3.83036 0 3.0519C0 2.49107 0.15904 1.98884 0.426897 1.49498C0.636161 1.1183 0.904018 0.649553 1.31417 0.473772C1.5904 0.348214 2.17634 0.214285 2.47768 0.214285C2.53627 0.214285 2.59487 0.214285 2.65346 0.239397C2.82924 0.297991 3.01339 0.708147 3.0971 0.875558C3.36496 1.35268 3.62444 1.83817 3.90067 2.30692C4.0346 2.52455 4.28571 2.79241 4.28571 3.0519C4.28571 3.5625 2.77065 4.30748 2.77065 4.75949C2.77065 4.98549 2.97991 5.27846 3.0971 5.47935C3.94252 7.00279 4.99721 8.05748 6.52065 8.9029C6.72154 9.02009 7.01451 9.22935 7.24051 9.22935C7.69252 9.22935 8.4375 7.71429 8.9481 7.71429C9.20759 7.71429 9.47545 7.9654 9.69308 8.09933C10.1618 8.37556 10.6473 8.63504 11.1244 8.9029C11.2919 8.98661 11.702 9.17076 11.7606 9.34654C11.7857 9.40513 11.7857 9.46373 11.7857 9.52232Z"></path>
+            </svg>
+            <span>8 (495) 255 08 67</span>
+          </a>
+          <div class="footer__icon footer__icon--address">
+            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.57229 13.0056C6.53408 13.0435 6.49816 13.0791 6.4651 13.1119C6.43205 13.0791 6.39614 13.0435 6.35794 13.0056L6.34072 12.9886C6.17155 12.821 5.94945 12.601 5.69073 12.3379C5.15511 11.7932 4.46727 11.0685 3.78912 10.2647C3.10851 9.45808 2.45157 8.58809 1.96847 7.75304C1.4742 6.8987 1.21509 6.17026 1.21509 5.62483C1.21509 2.98248 3.52444 0.75 6.46483 0.75C9.40538 0.75 11.7151 2.98256 11.7151 5.62483C11.7151 6.17026 11.456 6.8987 10.9617 7.75305C10.4786 8.58809 9.8217 9.45808 9.1411 10.2647C8.46297 11.0685 7.77513 11.7932 7.2395 12.3379C6.98051 12.6013 6.75821 12.8215 6.58896 12.9891L6.57229 13.0056ZM6.94701 13.6676C6.94705 13.6676 6.9471 13.6677 6.94714 13.6677L6.94701 13.6676ZM9.36409 5.62483C9.36409 4.05454 8.01804 2.86002 6.46483 2.86002C4.91242 2.86002 3.56556 4.0544 3.56556 5.62483C3.56556 7.19455 4.91233 8.38963 6.46483 8.38963C8.01813 8.38963 9.36409 7.19441 9.36409 5.62483Z" stroke-width="1.5"></path>
+            </svg>
+            <b>Адрес</b>
+            <address>г. Москва Сколковское ш. 31, ТЦ Спорт Хит, 1 этаж, пав 2А, РФ</address>
+          </div>
+          <div class="footer__icon footer__icon--email">
+            <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.9366 1.72696L11.9366 1.72703C13.1155 2.81116 13.6996 4.11987 13.6996 5.65322C13.6996 6.8652 13.34 7.89605 12.626 8.74872L12.6259 8.74884C11.9116 9.60435 11.0716 10.0239 10.1021 10.0239C9.45007 10.0239 8.96649 9.77585 8.63628 9.27927L8.56273 9.16866L8.47677 9.26993C8.02801 9.79864 7.49566 10.0587 6.87283 10.0587C6.17247 10.0587 5.5734 9.76661 5.06854 9.16595L5.0684 9.16579C4.5655 8.57004 4.31076 7.77885 4.31076 6.78761C4.31076 5.77479 4.59619 4.95465 5.16538 4.32078L5.16553 4.32061C5.73396 3.6847 6.41383 3.3694 7.20726 3.3694C7.70115 3.3694 8.15813 3.53931 8.57808 3.88197L8.69699 3.979L8.73771 3.83102L8.82719 3.50585H10.3503L9.86638 7.46306L9.86637 7.46306L9.8662 7.46468C9.83657 7.74482 9.82016 7.98942 9.82016 8.20025C9.82016 8.34092 9.85258 8.46487 9.93527 8.55367C10.0192 8.64382 10.1384 8.68016 10.2733 8.68016C10.7558 8.68016 11.2019 8.37759 11.614 7.81543C12.0331 7.24641 12.2408 6.53413 12.2408 5.69068C12.2408 4.45362 11.7877 3.42318 10.8835 2.60658C9.98067 1.79134 8.87263 1.38487 7.56844 1.38487C6.15104 1.38487 4.95064 1.88212 3.97893 2.8702C3.0042 3.86132 2.51619 5.09635 2.51619 6.5709C2.51619 7.93063 2.97212 9.11829 3.87958 10.1266L3.87959 10.1266C4.79626 11.1448 6.08607 11.6472 7.73432 11.6472C8.77161 11.6472 9.83374 11.4137 10.9146 10.9489C11.2787 10.794 11.6948 10.9633 11.842 11.3278L11.8421 11.3278C11.9844 11.6803 11.8144 12.0835 11.4621 12.2338L11.462 12.2339C10.2432 12.7558 9.00176 13.015 7.737 13.015C5.63719 13.015 3.97937 12.3778 2.74675 11.111C1.51535 9.83998 0.899561 8.32655 0.899561 6.56287C0.899561 4.72194 1.54711 3.18853 2.84044 1.95315C4.13485 0.716733 5.70176 0.1 7.54436 0.1C9.29829 0.1 10.7609 0.643341 11.9366 1.72696ZM8.14098 7.86929L8.14116 7.86904C8.4565 7.44209 8.61545 6.95579 8.61823 6.40821V6.4077C8.61823 5.9643 8.48843 5.60044 8.22085 5.32414C7.95816 5.05288 7.65215 4.91379 7.30625 4.91379C6.90497 4.91379 6.57196 5.10504 6.31048 5.46315C6.04838 5.82213 5.92203 6.2889 5.92203 6.8545C5.92203 7.3141 6.01285 7.7046 6.20059 8.02333C6.38795 8.34599 6.64734 8.52231 6.97717 8.52231C7.4359 8.52231 7.82444 8.29509 8.14098 7.86929Z" stroke-width="0.2"></path>
+            </svg>
+            <b>Email</b>
+            <a href="mailto:info@velo-port.ru">info@velo-port.ru</a>
+          </div>
+          <ul class="payment">
+            <li><img src="img/images/pay-1.svg" alt="VISA"></li>
+            <li><img src="img/images/pay-2.svg" alt="MasterCard"></li>
+            <li><img src="img/images/pay-3.svg" alt="Wallet"></li>
+            <li><img src="img/images/pay-4.svg" alt="Мир"></li>
+          </ul>
+        </div>
+        <nav class="footer__nav footer__nav--help">
+          <p class="footer__title">Помощь</p>
+          <ul class="footer__list text-fill">
+            <li class="footer__item"><a data-hover="Как купить" href="#">Как купить</a></li>
+            <li class="footer__item"><a data-hover="Доставка" href="#">Доставка</a></li>
+            <li class="footer__item"><a data-hover="Гарантия" href="#">Гарантия</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--cabinet">
+          <p class="footer__title">Кабинет</p>
+          <ul class="footer__list text-fill">
+            <li class="footer__item"><a data-hover="Личные данные" href="#">Личные данные</a></li>
+            <li class="footer__item"><a data-hover="Текущие заказы" href="#">Текущие заказы</a></li>
+            <li class="footer__item"><a data-hover="История заказов" href="#">История заказов</a></li>
+            <li class="footer__item footer__item--active"><a data-hover="Корзина" href="#">Корзина</a></li>
+            <li class="footer__item"><a data-hover="Избранное" href="#">Избранное</a></li>
+            <li class="footer__item"><a data-hover="Сравнение" href="#">Сравнение</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--company">
+          <p class="footer__title">Компания</p>
+          <ul class="footer__list text-fill">
+            <li class="footer__item"><a data-hover="О магазине" href="#">О магазине</a></li>
+            <li class="footer__item"><a data-hover="Контакты" href="#">Контакты</a></li>
+            <li class="footer__item"><a data-hover="Новости" href="#">Новости</a></li>
+            <li class="footer__item"><a data-hover="Статьи" href="#">Статьи</a></li>
+            <li class="footer__item">
+              <a class="policy" href="#">
+                <p data-hover="Политика обработки ">Политика обработки</p>
+                <p data-hover="персональных данных">персональных данных</p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <p class="footer__title">Соцсети</p>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link" title="Instagram">
+                  <svg width="33" height="33" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9118 16.9167C18.9118 15.673 17.8974 14.6586 16.6537 14.6586C15.4099 14.6586 14.3955 15.673 14.3955 16.9167C14.3955 18.1604 15.4099 19.1748 16.6537 19.1748C17.8974 19.1748 18.9118 18.1604 18.9118 16.9167ZM20.1291 16.9167C20.1291 18.8396 18.5766 20.3921 16.6537 20.3921C14.7307 20.3921 13.1783 18.8396 13.1783 16.9167C13.1783 14.9938 14.7307 13.4413 16.6537 13.4413C18.5766 13.4413 20.1291 14.9938 20.1291 16.9167ZM21.0817 13.3002C21.0817 13.75 20.7201 14.1117 20.2702 14.1117C19.8203 14.1117 19.4587 13.75 19.4587 13.3002C19.4587 12.8503 19.8203 12.4886 20.2702 12.4886C20.7201 12.4886 21.0817 12.8503 21.0817 13.3002ZM16.6537 11.3596C15.6657 11.3596 13.5487 11.2802 12.6578 11.633C12.3491 11.7565 12.1198 11.9065 11.8816 12.1446C11.6434 12.3828 11.4935 12.6121 11.37 12.9209C11.0172 13.8118 11.0965 15.9288 11.0965 16.9167C11.0965 17.9046 11.0172 20.0216 11.37 20.9125C11.4935 21.2212 11.6434 21.4506 11.8816 21.6888C12.1198 21.9269 12.3491 22.0769 12.6578 22.2004C13.5487 22.5532 15.6657 22.4738 16.6537 22.4738C17.6416 22.4738 19.7586 22.5532 20.6495 22.2004C20.9582 22.0769 21.1876 21.9269 21.4257 21.6888C21.6639 21.4506 21.8138 21.2212 21.9373 20.9125C22.2902 20.0216 22.2108 17.9046 22.2108 16.9167C22.2108 15.9288 22.2902 13.8118 21.9373 12.9209C21.8138 12.6121 21.6639 12.3828 21.4257 12.1446C21.1876 11.9065 20.9582 11.7565 20.6495 11.633C19.7586 11.2802 17.6416 11.3596 16.6537 11.3596ZM23.428 16.9167C23.428 17.8517 23.4369 18.7779 23.3839 19.7129C23.331 20.7978 23.084 21.7593 22.2902 22.5532C21.4963 23.3471 20.5348 23.594 19.4499 23.647C18.5148 23.6999 17.5887 23.6911 16.6537 23.6911C15.7187 23.6911 14.7925 23.6999 13.8575 23.647C12.7725 23.594 11.811 23.3471 11.0172 22.5532C10.2233 21.7593 9.9763 20.7978 9.92338 19.7129C9.87045 18.7779 9.87927 17.8517 9.87927 16.9167C9.87927 15.9817 9.87045 15.0555 9.92338 14.1205C9.9763 13.0355 10.2233 12.0741 11.0172 11.2802C11.811 10.4863 12.7725 10.2393 13.8575 10.1864C14.7925 10.1335 15.7187 10.1423 16.6537 10.1423C17.5887 10.1423 18.5148 10.1335 19.4499 10.1864C20.5348 10.2393 21.4963 10.4863 22.2902 11.2802C23.084 12.0741 23.331 13.0355 23.3839 14.1205C23.4369 15.0555 23.428 15.9817 23.428 16.9167Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Facebook">
+                  <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.5867 9.77778V12.1065H19.2019C18.1169 12.1065 17.914 12.6269 17.914 13.3767V15.0438H20.4985L20.1545 17.6548H17.914V24.3498H15.2148V17.6548H12.9655V15.0438H15.2148V13.1209C15.2148 10.8892 16.5821 9.67193 18.5756 9.67193C19.5282 9.67193 20.3486 9.7425 20.5867 9.77778Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="Ok">
+                  <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.0453 17.0137C14.8401 17.0137 13.0407 15.2231 13.0407 13.0179C13.0407 10.8039 14.8401 9.01324 17.0453 9.01324C19.2505 9.01324 21.05 10.8039 21.05 13.0179C21.05 15.2231 19.2505 17.0137 17.0453 17.0137ZM17.0453 11.042C15.9604 11.042 15.0783 11.9241 15.0783 13.0179C15.0783 14.1029 15.9604 14.9849 17.0453 14.9849C18.1303 14.9849 19.0124 14.1029 19.0124 13.0179C19.0124 11.9241 18.1303 11.042 17.0453 11.042ZM21.6586 17.4989C22.0467 18.2927 21.6057 18.672 20.6001 19.3248C19.7533 19.8628 18.589 20.0745 17.8216 20.1539L18.4655 20.789L20.8207 23.1442C21.1735 23.5058 21.1735 24.088 20.8207 24.4408L20.7148 24.5555C20.3531 24.9083 19.771 24.9083 19.4093 24.5555C18.8183 23.9557 17.9539 23.0913 17.0542 22.1915L14.699 24.5555C14.3374 24.9083 13.7552 24.9083 13.4023 24.5555L13.2965 24.4408C12.9348 24.088 12.9348 23.5058 13.2965 23.1442C13.8963 22.5444 14.7519 21.6799 15.6517 20.789L16.2868 20.1539C15.5282 20.0745 14.3462 19.8717 13.4906 19.3248C12.485 18.672 12.0439 18.2927 12.4321 17.4989C12.6614 17.049 13.2877 16.6697 14.1168 17.3224C14.1168 17.3224 15.2371 18.2134 17.0453 18.2134C18.8536 18.2134 19.9739 17.3224 19.9739 17.3224C20.803 16.6697 21.4293 17.049 21.6586 17.4989Z"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link" title="VK">
+                  <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.9476 13.6001C25.0799 13.9617 24.6653 14.8085 23.6245 16.1934C21.9132 18.4692 21.728 18.2575 23.1393 19.5718C24.4977 20.8331 24.78 21.4418 24.8241 21.5212C24.8241 21.5212 25.3886 22.5091 24.1978 22.5179L21.9397 22.5532C21.4545 22.6502 20.8106 22.2092 20.8106 22.2092C19.9638 21.627 19.17 20.1186 18.5525 20.3127C18.5525 20.3127 17.9174 20.5156 17.935 21.874C17.9439 22.1651 17.8027 22.3238 17.8027 22.3238C17.8027 22.3238 17.644 22.4914 17.3352 22.5179H16.3208C14.0892 22.659 12.1221 20.6038 12.1221 20.6038C12.1221 20.6038 9.96984 18.3809 8.08219 13.9441C7.9587 13.653 8.09101 13.5119 8.09101 13.5119C8.09101 13.5119 8.22332 13.3443 8.5938 13.3443L11.0107 13.3266C11.24 13.3619 11.3988 13.4854 11.3988 13.4854C11.3988 13.4854 11.5399 13.5824 11.6105 13.7677C12.0075 14.7556 12.5191 15.6553 12.5191 15.6553C13.4011 17.4724 14.001 17.7811 14.345 17.5959C14.345 17.5959 14.7948 17.3224 14.6978 15.1261C14.6625 14.3322 14.442 13.9705 14.442 13.9705C14.2391 13.6971 13.8598 13.6177 13.6922 13.5912C13.5599 13.5736 13.7804 13.2561 14.0715 13.1149C14.5037 12.9032 15.2712 12.8944 16.1797 12.9032C16.8942 12.912 17.0971 12.9561 17.3705 13.0179C18.2085 13.2208 17.9262 13.997 17.9262 15.867C17.9262 16.4668 17.8115 17.3048 18.2438 17.5783C18.429 17.7017 18.8877 17.5959 20.0168 15.673C20.0168 15.673 20.546 14.7556 20.9606 13.6883C21.0311 13.4942 21.1811 13.4148 21.1811 13.4148C21.1811 13.4148 21.3222 13.3354 21.5163 13.3619L24.0567 13.3443C24.8241 13.2472 24.9476 13.6001 24.9476 13.6001Z"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrapper footer__wrap">
+        <p>Powered By Velo-Port.ru © 2020.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <nav class="nav">
+    <div class="wrapper">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">
+            <figure class="nav__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+
+                <path d="M3.58462 14.7288C3.58462 13.9784 3.10648 13.3396 2.43825 13.1006L12.9231 3.36464L23.4079 13.1006C22.7397 13.3396 22.2615 13.9784 22.2615 14.7288V25H15.2154V18.6C15.2154 17.4954 14.32 16.6 13.2154 16.6H12.6308C11.5262 16.6 10.6308 17.4954 10.6308 18.6V25L10.6308 26V25H3.58462V14.7288Z" stroke-width="2"></path>
+              </svg>
+            </figure>
+            <span>Главная</span>
+          </a>
+        </li>
+        <li class="nav__item nav__item--active">
+          <a href="#menu" class="nav__link">
+           <figure class="nav__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                <rect x="13" y="13" width="8" height="8" rx="1" stroke-width="2"></rect>
+                <rect x="13" y="1" width="8" height="8" rx="1" stroke-width="2"></rect>
+                <rect x="1" y="13" width="8" height="8" rx="1" stroke-width="2"></rect>
+                <rect x="1" y="1" width="8" height="8" rx="1" stroke-width="2"></rect>
+              </svg>
+            </figure>
+            <span>Каталог</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="basket.html" class="nav__link">
+            <figure class="nav__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+                <path d="M1 1.78571C1 1.35178 1.35178 1 1.78571 1H4.14286C4.5034 1 4.81767 1.24538 4.90511 1.59515L5.54204 4.14286H23.7857C24.0277 4.14286 24.2561 4.25433 24.405 4.44503C24.5539 4.63574 24.6067 4.88441 24.548 5.11914L22.1908 14.5477C22.1034 14.8975 21.7891 15.1429 21.4286 15.1429H7.28571C6.92518 15.1429 6.6109 14.8975 6.52346 14.5477L3.52939 2.57143H1.78571C1.35178 2.57143 1 2.21965 1 1.78571ZM5.9349 5.71429L7.89918 13.5714H20.8151L22.7794 5.71429H5.9349ZM8.85714 18.2857C7.98927 18.2857 7.28571 18.9893 7.28571 19.8571C7.28571 20.725 7.98927 21.4286 8.85714 21.4286C9.72502 21.4286 10.4286 20.725 10.4286 19.8571C10.4286 18.9893 9.72502 18.2857 8.85714 18.2857ZM5.71429 19.8571C5.71429 18.1214 7.12139 16.7143 8.85714 16.7143C10.5929 16.7143 12 18.1214 12 19.8571C12 21.5929 10.5929 23 8.85714 23C7.12139 23 5.71429 21.5929 5.71429 19.8571ZM19.8571 18.2857C18.9893 18.2857 18.2857 18.9893 18.2857 19.8571C18.2857 20.725 18.9893 21.4286 19.8571 21.4286C20.725 21.4286 21.4286 20.725 21.4286 19.8571C21.4286 18.9893 20.725 18.2857 19.8571 18.2857ZM16.7143 19.8571C16.7143 18.1214 18.1214 16.7143 19.8571 16.7143C21.5929 16.7143 23 18.1214 23 19.8571C23 21.5929 21.5929 23 19.8571 23C18.1214 23 16.7143 21.5929 16.7143 19.8571Z" stroke-width="0.2" stroke-linejoin="round"></path>
+              </svg>
+            </figure>
+            <span>Корзина</span>
+            <div class="nav__num">5</div>
+          </a>
+        </li>
+        <li class="nav__item">
+          <button type="button" class="nav__link nav__link--search">
+            <figure class="nav__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <circle cx="11.4551" cy="12.4904" r="9.56795" transform="rotate(-45 11.4551 12.4904)" stroke-width="2"></circle>
+                <path d="M18.24 19.2751L24.1163 25.1514" stroke-width="2" stroke-linecap="round"></path>
+              </svg>
+            </figure>
+            <span>Поиск</span>
+          </button>
+        </li>
+        <li class="nav__item">
+          <a href="registration.html" class="nav__link">
+            <figure class="nav__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                <path d="M23.2631 4.73689C20.789 2.26278 17.4989 0.9 14 0.9C10.5009 0.9 7.211 2.26279 4.73689 4.73689C2.26279 7.211 0.9 10.5009 0.9 14C0.9 17.4989 2.26278 20.789 4.73689 23.2631C7.211 25.7372 10.5009 27.1 14 27.1C17.4989 27.1 20.789 25.7372 23.2631 23.2631C25.7372 20.789 27.1 17.4989 27.1 14C27.1 10.5009 25.7372 7.211 23.2631 4.73689ZM7.62708 23.4189C8.18781 20.3682 10.8443 18.1252 14 18.1252C17.1559 18.1252 19.8122 20.3682 20.3729 23.4189C18.5536 24.6538 16.3598 25.3766 14 25.3766C11.6402 25.3766 9.44643 24.6538 7.62708 23.4189ZM9.96649 12.3683C9.96649 10.1441 11.776 8.33474 14 8.33474C16.224 8.33474 18.0335 10.1443 18.0335 12.3683C18.0335 14.5922 16.224 16.4018 14 16.4018C11.776 16.4018 9.96649 14.5922 9.96649 12.3683ZM17.2908 17.0892C18.7804 16.0479 19.7572 14.3202 19.7572 12.3683C19.7572 9.19374 17.1745 6.6113 14 6.6113C10.8255 6.6113 8.24305 9.19375 8.24305 12.3683C8.24305 14.3202 9.21977 16.0479 10.7092 17.0892C9.90649 17.4409 9.15854 17.922 8.49633 18.5214C7.38243 19.5295 6.57592 20.8102 6.14753 22.2234C3.97753 20.1503 2.62344 17.2305 2.62344 14C2.62344 7.72701 7.72701 2.62344 14 2.62344C20.273 2.62344 25.3766 7.72701 25.3766 14C25.3766 17.2307 24.0225 20.1505 21.8525 22.2236C21.4241 20.8105 20.6178 19.5297 19.5037 18.5216C18.8415 17.9222 18.0937 17.4409 17.2908 17.0892Z" stroke-width="0.2"></path>
+              </svg>
+            </figure>
+            <span>Профиль</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+    <!-- Mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li><a href="#">Велопарковки</a></li>
+      <li><span>Велосипеды</span>
+        <ul>
+          <li><span>Беговые</span>
+            <ul>
+              <li><a href="#">Хардтейл</a></li>
+              <li><a href="#">Двухподвес</a></li>
+              <li><a href="#">Горный</a></li>
+              <li><a href="#">Прогулочный</a></li>
+              <li><a href="#">Фитнес</a></li>
+              <li><span>Спортивный</span>
+                <ul>
+                  <li><a href="#">Scott</a></li>
+                  <li><a href="#">Glant</a></li>
+                  <li><a href="#">Trek</a></li>
+                  <li><a href="#">Dogma</a></li>
+                  <li><a href="#">Ghost</a></li>
+                  <li><a href="#">Dewolt</a></li>
+                  <li><a href="#">Look</a></li>
+                  <li><a href="#">Stevena</a></li>
+                  <li><a href="#">Merida</a></li>
+                  <li><a href="#">BMC</a></li>
+                  <li><a href="#">Haro</a></li>
+                  <li><a href="#">RTM</a></li>
+                  <li><a href="#">Trek</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Кросс-кантри</a></li>
+              <li><a href="#">Trail / All mountain / Enduro</a></li>
+              <li><a href="#">MTB</a></li>
+              <li><a href="#">Туристические</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Детские</a></li>
+          <li><span>Горные</span>
+            <ul>
+              <li><a href="#">Хардтейл</a></li>
+              <li><a href="#">Двухподвес</a></li>
+              <li><a href="#">Горный</a></li>
+              <li><a href="#">Прогулочный</a></li>
+              <li><a href="#">Фитнес</a></li>
+              <li><span>Спортивный</span>
+                <ul>
+                  <li><a href="#">Scott</a></li>
+                  <li><a href="#">Glant</a></li>
+                  <li><a href="#">Trek</a></li>
+                  <li><a href="#">Dogma</a></li>
+                  <li><a href="#">Ghost</a></li>
+                  <li><a href="#">Dewolt</a></li>
+                  <li><a href="#">Look</a></li>
+                  <li><a href="#">Stevena</a></li>
+                  <li><a href="#">Merida</a></li>
+                  <li><a href="#">BMC</a></li>
+                  <li><a href="#">Haro</a></li>
+                  <li><a href="#">RTM</a></li>
+                  <li><a href="#">Trek</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Кросс-кантри</a></li>
+              <li><a href="#">Trail / All mountain / Enduro</a></li>
+              <li><a href="#">MTB</a></li>
+              <li><a href="#">Туристические</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Подростковые</a></li>
+          <li><a href="#">Городские</a></li>
+          <li><a href="#">Электро</a></li>
+          <li><a href="#">Гравийные / Туристические</a></li>
+          <li><a href="#">Складные</a></li>
+          <li><a href="#">Шоссейные</a></li>
+          <li><a href="#">BMX / Трюковые</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Самокаты</a></li>
+      <li><a href="#">Аксесуары</a></li>
+      <li><a href="#">Запчасти</a></li>
+      <li class="menu-line"><a href="#">Инструменты</a></li>
+      <li><a href="#">Летняя экипировка</a></li>
+      <li class="menu-line"><a href="#">Одежда</a></li>
+      <li><a href="#">Скандинавская ходьба</a></li>
+      <li class="menu-line"><a href="#">Лыжероллеры</a></li>
+      <li><a href="#">Беговые лыжи</a></li>
+      <li><a href="#">Ботинки для беговых лыж</a></li>
+      <li><a href="#">Крепления для беговых лыж</a></li>
+      <li><a href="#">Палки для беговых лыж</a></li>
+      <li class="menu-line"><a href="#">Аксессуары для лыж</a></li>
+      <li class="menu-line"><a href="#">Зимняя экипировка</a></li>
+      <li><a href="#">Горные лыжи</a></li>
+      <li><a href="#">Ботинки для горных лыж</a></li>
+      <li class="menu-line"><a href="#">Палки для горных лыж</a></li>
+      <li><a href="#">Катание с горки</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заполните заявку и эксперт по ремонту свяжется с вами!</p>
+    <form action="#" class="form">
+      <div class="form__field">
+        <input type="text" class="form__input" placeholder="Как вас зовут?" required="">
+      </div>
+      <div class="form__field">
+        <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" required="">
+      </div>
+      <div class="form__check">
+        <input type="checkbox" id="checkbox" class="checkbox">
+        <label for="checkbox" class="checkbox-label">Я согласен на <a href="#">обработку персональных данных</a></label>
+      </div>
+      <button type="submit" class="btn form__btn">Позвонить мне</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="buy" class="popup">
+    <p class="popup__title">Товар добавлен в корзину</p>
+    <div class="popup__body">
+      <div class="popup__wrap">
+        <a href="#" class="popup__img">
+          <img src="img/images/img-1.png" alt="Велосипед">
+        </a>
+        <div class="popup__info">
+          <p class="popup__price">265 595 р.</p>
+          <p class="popup__name"><a href="#">Велосипед Scott Aspect 960 2022 (XL Красный)Велосипед Scott Aspect 960 2022 (XL</a></p>
+          <p class="popup__comment">Количество скоростей: <span>1</span></p>
+          <div class="popup__btns">
+            <a href="#" class="btn popup__buy">Перейти в корзину</a>
+            <button type="button" data-fancybox-close="" class="btn btn--white popup__link">Продолжить покупки</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="click" class="popup popup--click">
+    <p class="popup__title">Заказ в один клик</p>
+    <div class="popup__body">
+      <form action="#" class="form">
+        <div class="popup__wrap">
+          <div class="popup__form">
+            <p class="popup__subtitle">Как с Вами связаться?</p>
+            <div class="form__field form__field--label">
+              <label for="name" class="form__label">ФИО</label>
+              <input type="text" id="name" class="form__input" placeholder="" required="">
+            </div>
+            <div class="form__field form__field--label">
+              <label for="phone" class="form__label">Телефон</label>
+              <input type="tel" id="phone" class="form__input" placeholder="" required="">
+            </div>
+            <div class="form__field form__field--nolabel">
+              <label for="email" class="form__label">E-Mail</label>
+              <input type="email" id="email" class="form__input" placeholder="">
+            </div>
+            <p class="form__comment">(используем только для информирования о статусе заказа)</p>
+          </div>
+          <div class="popup__order">
+            <div class="basket">
+              <table class="basket__table">
+                <tr>
+                  <td>
+                    <a href="#" class="basket__img">
+                      <img src="img/images/img-1.png" alt="Велосипед PRIDE Rocx Tour">
+                    </a>
+                  </td>
+                  <td>
+                    <p class="basket__title"><a href="#">Велосипед PRIDE Rocx Tour</a></p>
+                    <p class="basket__label">Размер велосипеда</p>
+                    <div class="selection">
+                      <input type="checkbox" id="size1" class="selection__checkbox">
+                      <label for="size1" class="selection__label">L</label>
+                      <input type="checkbox" id="size2" class="selection__checkbox" checked="">
+                      <label for="size2" class="selection__label">M</label>
+                      <input type="checkbox" id="size3" class="selection__checkbox">
+                      <label for="size3" class="selection__label">S</label>
+                      <input type="checkbox" id="size4" class="selection__checkbox">
+                      <label for="size4" class="selection__label">XL</label>
+                    </div>
+                    <p class="basket__label">Цвет</p>
+                    <div class="selection">
+                      <input type="checkbox" id="color1" class="selection__checkbox">
+                      <label for="color1" class="selection__label">Синий</label>
+                      <input type="checkbox" id="color2" class="selection__checkbox">
+                      <label for="color2" class="selection__label">Красный</label>
+                      <input type="checkbox" id="color3" class="selection__checkbox" checked="">
+                      <label for="color3" class="selection__label">Зелёный</label>
+                      <input type="checkbox" id="color4" class="selection__checkbox">
+                      <label for="color4" class="selection__label">Чёрный</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="num">
+                      <button type="button" class="num__btn num__btn--minus">&ndash;</button>
+                      <input type="text" class="num__value" value="25">
+                      <button type="button" class="num__btn num__btn--plus">&plus;</button>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="basket__sale"><span>-30%</span></p>
+                    <p class="basket__newprice">265 595 р.</p>
+                    <p class="basket__oldprice">365 595 р.</p>
+                  </td>
+                </tr>
+              </table>
+              <div class="basket__wrap">
+                <div class="form__check">
+                  <input type="checkbox" id="checkbox" class="checkbox" checked="">
+                  <label for="checkbox" class="checkbox-label">Я согласен на <a href="#">обработку персональных данных</a></label>
+                </div>
+                <button type="submit" class="btn basket__btn">Оформить заказ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.fancybox.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/color-switcher.js"></script>
+  <script src="js/mmenu-light.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

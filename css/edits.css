@@ -1,0 +1,19 @@
+.tags__slider--sport::before {
+  width: 1160px;
+  bottom: auto;
+  height: 200px;
+}
+.menu__block--right .menu__dropdown {
+  left: ~"calc(50vw + 384px)";
+  -webkit-transform: translateX(-50vw);
+      -ms-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+}
+@media (max-width: 1470px) {
+  .tags__slider--sport::before {
+    width: 920px;
+  }
+  .menu__block--right .menu__dropdown {
+    left: ~"calc(50vw + 266px)";
+  }
+}
