@@ -406,8 +406,11 @@
   .footer {
     margin-top: auto;
   }
+
+   /* -------------Changes------------- */
   .body-cut {
-    overflow-y: hidden;
+    /* Добавление свойства hidden к телу чтобы залокировать скрол */
+    overflow: hidden;
   }
   img {
     max-width: 100%;
@@ -556,7 +559,8 @@
     max-width: 100%;
   }
 
-
+  /* -------------Changes------------- */
+  /* Исправлена анимация для футера также исправить футер в разметке (пример в файле index.html)*/
   .text-fill li a.policy{
     &::before {
         content: '';
@@ -3670,6 +3674,8 @@
   .master--mobile {
     display: none;
   }
+
+  /* -----------Changes----------- */
   .master__line {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3680,7 +3686,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 83px;
+    margin-bottom: 40px;  /* Изменение верхнего отступа с 83 до 40*/
     padding: 19px;
     color: #fff;
     line-height: 1;
@@ -3723,8 +3729,11 @@
     font-size: 16px;
     line-height: 1.5;
   }
+
+  /* -----------Changes----------- */
   .master__info .title-2 {
-    margin-top: 15px;
+    /* Изменение верхнего отступа с 15 до 0*/
+    margin-top: 0;
     margin-bottom: 20px;
   }
   .master__slider {
@@ -4463,13 +4472,31 @@
     width: 100%;
     height: 320px;
     margin-bottom: 6px;
+    &.about {
+      height: 340px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+      }
+    }
   }
   .news__img img {
     display: block;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
+    object-position: center;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
     border-radius: 4px;
   }
   .news__info {
@@ -5159,9 +5186,10 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+
+  /* ---------Changes------- */
   .tags__name {
-    margin-right: 5px;
-    min-width: 100px;
+    /* удаление отступа margin-right и ограничение ширины*/
     font-weight: 700;
     line-height: 1.4;
     -webkit-transition: ease-out 0.3s;
@@ -5177,10 +5205,12 @@
     text-decoration: none;
   }
 
-
+/* --------Changes-------- */
 .tags__wrap{
-    @media screen and (max-width: 650px){
-        flex-wrap: nowrap;
+  @media screen and (max-width: 650px){
+      /* позволяет добавить скрол на мобильных устройствах */
+        flex-wrap: nowrap;  
+        -webkit-flex: 1 1 auto;
     }
     margin:0;
     list-style:none;
@@ -5190,6 +5220,8 @@
     flex-wrap:wrap;
     max-width:100%;
     padding:0 0 10px;
+    column-gap: 30px;  /* добавление отступов вместо margin  */
+    row-gap: 10px; /* добавление отступов вместо margin  */
     overflow-x:auto;
     scrollbar-width:thin;
     scrollbar-color:var(--season-color) rgba(134,149,173,.1);
@@ -7028,11 +7060,12 @@
               align-items: center;
       overflow-x: auto;
     }
+
+    /* ----------Changes--------- */
     .tags__name {
-      width: auto;
-      min-width: auto;
-      margin-right: 34px;
+      width: max-content;
       white-space: nowrap;
+      /* удаление отступа справа */
     }
     .wrapper__content,
     .card__about,
@@ -7148,39 +7181,30 @@
       display: -ms-flexbox;
       display: flex;
     }
+
+    /* -------------Changes------------- */
     .filter__drop {
       position: fixed;
       top: 0;
       right: 0;
       bottom: 0;
       z-index: 1000;
-      max-width: 100%;
       display: block;
-      width: 0;
+      /* добавлена статическая ширина для всего меню */
+      width: 360px;
+      /* теперь меню скрывается и открывается не свойством width а свойством translate */
+      transform: translateX(100%);
       background-color: #fff;
       -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
-              box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
       -webkit-transition: ease-out 0.3s;
       transition: ease-out 0.3s;
-      &.filter_close_anim {
-        .filter__wrap {    
-          animation: FilterClose 0.3s forwards;
-        }
-      }
+      /* Удалены дублирующиеся свойства */
     }
-    @keyframes FilterClose{
-        0% {
-            opacity: 1;
-        } 
-        100% {
-            opacity: 0;
-        }
-    }
+    /* -------------Changes------------- */
     .filter__drop--open {
-      width: 360px;
-      z-index: 1000;
-      -webkit-transition: ease-out 0.3s;
-      transition: ease-out 0.3s;
+      transform: translateX(0%);
+      /* Удалены дублирующиеся свойства */
     }
     .filter__drop--open .filter__wrap {
       opacity: 1;
@@ -7198,6 +7222,8 @@
       font-weight: 600;
       text-transform: none;
     }
+
+    /* -------------Changes------------- */
     .filter__wrap {
       width: 100%;
       height: 100%;
@@ -7205,6 +7231,9 @@
       overflow-y: auto;
       scrollbar-width: thin;
       scrollbar-color: var(--season-color) rgba(134, 149, 173, 0.1);
+      /* добавлены новые ствойства */
+      opacity: 0;
+      transition: 0.6s;
     }
     .filter__wrap::-webkit-scrollbar {
       height: 4px;
@@ -7412,9 +7441,10 @@
       margin-right: auto;
       margin-bottom: 50px;
     }
+    /* -----------Changes---------- */
     .master__info .title-2 {
-      margin-top: -5px;
       line-height: 1;
+      /* Удаление ненужного отступа */
     }
     .master__view {
       padding-left: 20px;
@@ -7657,8 +7687,10 @@
     .master__info {
       width: 100%;
     }
+
+    /* -----------Changes--------- */
     .master__info {
-      margin-top: 30px;
+      /* Удлание ненужного отступа */
     }
   }
   @media (max-width: 700px) {
@@ -7832,9 +7864,6 @@
     .contacts__form,
     .contacts__list {
       width: 100%;
-    }
-    .master__line {
-      margin-bottom: 30px;
     }
     .offer__wrap {
       -webkit-box-orient: vertical;
@@ -8077,9 +8106,11 @@
       margin: 0;
       margin-left: 9px;
     }
+
+    /* -------------Changes------------- */
     .sorting {
       position: relative;
-      z-index: 200;
+      /* Удаление не нужного z-indexa */
       padding-bottom: 7px;
     }
     .sorting__drop {
@@ -9678,8 +9709,11 @@
             flex-grow: 1;
     max-width: 30%;
   }
+
+  /* -------------Changes------------- */
   .sorting {
-    z-index: 900;
+    /* Уменьшение z-index с 900 до 100 */
+    z-index: 100;
   }
   .catalog__item--simple {
     /* padding-bottom: 70px; */
@@ -9778,4 +9812,7 @@
     }
   }
   
-  /* change */
+   /* -------------Changes------------- */
+  .tooltipster-base {
+    font-size: 14px;
+  }
