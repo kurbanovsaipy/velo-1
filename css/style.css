@@ -1530,7 +1530,8 @@
     width: 50%;
     padding: 30px 0;
     background-color: #fff;
-    border-left: 1px solid rgba(134, 149, 173, 0.2);
+    border-left: 3px solid rgba(134, 149, 173, 0.2);
+    /*---------Changes---------*/
     &.right{
         text-align: end;
     }
@@ -1755,14 +1756,17 @@
     padding:0 20px;
     font-size:14px;
     line-height:24px;
-    color:#121218
+    color:#121218;
+    font-weight: 700;
   }
 
+  /* ----------------Changes--------------- */
   .menu__sublist {
     margin: 0;
     padding: 0;
     list-style: none;
     width: 100%;
+    max-width: 280px;
   }
   .menu__sublist:not(:last-of-type) {
     border-bottom: 1px solid rgba(134, 149, 173, 0.2);
@@ -1776,14 +1780,23 @@
     color: var(--season-color);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+    /* ------------------Changes---------------- */
+    &::before {
+      height: calc(100% - 6px);
+    }
   }
   .menu__subitem:hover > .menu__sublink::after,
   .menu__subitem:active > .menu__sublink::after,
   .menu__subitem--active > .menu__sublink::after {
-    background-image: url(../img/icons/angle-right-red.svg);
+    /* --------------Changes------------- */
+    background-image: url(../img/icons/angle-right.svg);
   }
   .menu__subitem--active > .menu__sublink {
     font-weight: 700;
+    /* ---------------Changes------------ */
+    &::before {
+      height: calc(100% - 6px);
+    }
   }
   .menu__subitem:hover > .menu__drop {
     z-index: 100;
@@ -1802,7 +1815,29 @@
     color: rgba(18, 18, 24, 0.7);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+    &.title {
+      color: var(--season-color);
+    }
+    /* --------------Changes---------------- */
+    &::before {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      width: 3px;
+      height: 0;
+      transform-origin: top;
+      background-color: var(--season-color);
+      transition: 0.4s;
+    }
+    &:hover {
+      &::before {
+        height: calc(100% - 6px);
+      }
+    }
   }
+
+
   .menu__sublink::after {
     content: "";
     position: absolute;
@@ -1832,6 +1867,8 @@
     padding: 20px;
     width: 519px;
   }
+
+  /* -------------------Changes--------------- */
   .menu__img{
     display:block;
     min-width: 500px;
@@ -1869,6 +1906,7 @@
     padding: 0;
   }
 
+  /* -------------Changes---------- */
   .header__dropmenu{
     width: 1440px;
     position:absolute;
@@ -1877,10 +1915,11 @@
     left:0;
     background:#fff;
     display:none;
-    -webkit-box-shadow:30px 4px 30px 0 rgba(0,0,0,.15);
-    box-shadow:30px 4px 30px 0 rgba(0,0,0,.15)
+    -webkit-box-shadow:0px 4px 30px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
   }
 
+  /*---------------Changes---------------*/
   @media (max-width:1470px){
     .header__dropmenu{
         width: calc(100vw - 50px);
@@ -1900,13 +1939,18 @@
     display: -ms-flexbox;
     display: flex;
   }
+
+  /* --------------Changes------------ */
   .menu__left {
-    width: 307px;
+    width: 100%;
+    max-width: 270px;
+    height: 720px;
     overflow-y: auto;
     max-height: calc(100vh - 172px);
     scrollbar-width: thin;
     scrollbar-color: var(--season-color) rgba(0, 0, 0, 0.1);
   }
+
   .menu__left::-webkit-scrollbar {
     height: 4px;
     width: 4px;
@@ -1931,10 +1975,12 @@
   }
   .catalog__menu__col-1,
   .level-2.active {
-    width: 25%;
+    width: 100%;
+    max-width: 280px;
   }
   .level-3.active {
-    width: 50%;
+    width: 100%;
+    max-width: 540px;
   }
   .catalog__menu__col__item.level-2 {
     display: none;
@@ -1976,14 +2022,19 @@
     display: -ms-flexbox;
     display: flex;
   }
+
+  /* -----------------Changes--------------- */
   .menu__sublink {
+    position: relative;
     font-size: 14px;
   }
   .menu__line {
     border-bottom: 1px solid rgba(134, 149, 173, 0.2);
   }
+
+  /* -------------Changes-------------- */
   .menu__item:hover .menu__sublist .menu__subitem:first-child .menu__drop {
-    display: block;
+    /* display: block; */
   }
   .menu__item:hover .menu__sublist .menu__subitem:hover .menu__drop {
     display: block;
@@ -6857,8 +6908,16 @@
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    /* ------------Changes------------ */
     .menu__dropdown {
-      width: 100%;
+      width: 1440px;
+    }
+     /* ------------Changes------------ */
+    @media (max-width:1470px){
+      .menu__dropdown{
+          width: calc(100vw - 50px);
+      }
     }
   }
   @media (max-width: 1200px) {
