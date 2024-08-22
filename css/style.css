@@ -1386,8 +1386,9 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
+  /*---------Changes----------*/
   .selection__label:hover {
-    border-color: var(--season-color);
+    /* border-color: var(--season-color); */
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
@@ -2826,6 +2827,10 @@
     margin-left: -20px;
     margin-right: -20px;
     margin-top: 0;
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
   /* change */
   .catalog__banner {
@@ -4850,33 +4855,41 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
-  /* change */
-  /* .hint::before {
+  /*---------- Changes ---------- */
+  .hint::before {
     content: attr(data-title);
     position: absolute;
-    bottom: 100%;
+    bottom: calc(100% + 5px);
     left: 0;
-    z-index: 10;
-    width: 100px;
-    padding: 5px;
-    font-size: 10px;
+    z-index: 200;
+    width: max-content;
+    max-width: 150px;
+    padding: 5px 10px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.1;
     text-align: left;
     background-color: var(--season-color);
     border-radius: 4px;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    line-height: 17px;
+    word-break: break-word;
     display: none;
   }
+  /* -----------Changes----------- */
   .hint:hover {
     color: var(--season-color);
     border-color: var(--season-color);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
+
+  /* -----------Changes----------- */
   .hint:hover::before {
     display: block;
     color: #fff;
-  } */
+  } 
   .hint-custom {
     /* content: attr(data-title); */
     /* position: absolute; */
@@ -5509,6 +5522,8 @@
     display: none;
   }
 
+  /* -------------Changes------------- */
+  /* Так же исправить верстку в файле card.html */
   .selection__label{
     display:block;
     min-width:34px;
@@ -5516,11 +5531,17 @@
     margin-right:10px;
     margin-bottom:10px;
     font-weight:500;
-    color:#8695ad;
+    color:#121218;
     text-align:center;
     border-radius:4px;
-    border:1px solid #8695ad;
+    border:1px solid #121218;
     opacity: 70%;
+}
+
+/* -------------Changes------------- */
+/* Так же исправить верстку в файле card.html */
+.selection__check:disabled+.selection__label {
+  opacity: 0.3;
 }
 
   .selection__check:checked+.selection__label{
