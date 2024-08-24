@@ -5082,14 +5082,15 @@
   .filter__selection {
     display: none;
   }
+
+  /* -------------Changes----------- */
   .filter__btn {
     position: relative;
     width: 328px;
     height: 39px;
     margin-bottom: 26px;
     max-width: 100%;
-    padding-left: 13px;
-    padding-right: 14px;
+    padding: 0 10px;
     font-size: 15px;
     color: #fff;
     font-weight: 600;
@@ -7543,10 +7544,11 @@
       bottom: 55px;
       left: 0;
       right: 0;
-      width: auto;
+      width: 100%;
       height: 82px;
       margin-bottom: 0;
       margin-right: 0;
+      padding: 0 10px;
       color: #fff;
       font-size: 0;
       border: 0;
@@ -7554,7 +7556,12 @@
       -webkit-box-shadow: none;
               box-shadow: none;
       border-radius: 0;
+      @media screen and (max-width: 620px) {
+        margin-right: 50px;
+      }
     }
+
+    /* -----------------Changes------------------ */
     .filter__btn::after {
       content: "Показать фильтр";
       position: absolute;
@@ -7563,7 +7570,7 @@
       left: 50%;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%);
-      width: 360px;
+      width: 300px;
       max-width: 100%;
       color: #fff;
       font-size: 14px;
@@ -7576,14 +7583,18 @@
       background-color: var(--season-color);
       border-radius: 4px;
     }
+
+    /* ---------------Changes--------------- */
     .filter__btn::before {
       z-index: 10;
-      left: calc(50% + 142px);
+      left: calc(50% + 115px);
       right: auto;
     }
+
+    /* ---------------Changes--------------- */
     .filter__btn span {
       top: 25px;
-      left: calc(50% + 148px);
+      left: calc(50% + 128px);
       right: auto;
       z-index: 20;
     }
@@ -9359,19 +9370,25 @@
       padding-left: 0;
       padding-right: 0;
     }
+
+    /* --------------Changes------------- */
     .filter__btn::after {
       left: 15px;
-      right: 15px;
+      right: 90px;
       -webkit-transform: none;
               transform: none;
       width: auto;
     }
+
+    /* --------------Changes------------- */
     .filter__btn span {
-      right: 32px;
+      right: 95px;
       left: auto;
     }
+
+    /* --------------Changes------------- */
     .filter__btn::before {
-      right: 38px;
+      right: 100px;
       left: auto;
     }
   }
