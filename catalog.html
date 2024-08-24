@@ -1005,7 +1005,8 @@
                     </div>
                   </div>
                   <div class="filter__field">
-                    <p class="filter__title">Размер колёс<a href="#" data-title="Справочная информация" class="hint">?</a></p>
+                    <!-- -------------Changes------------- -->
+                    <p class="filter__title">Размер колёс<span data-title="Справочная информация" class="hint">?</d></p>
                     <div class="filter__selection">
                       <div class="filter__columns">
                         <div class="filter__check">
@@ -1020,7 +1021,8 @@
                     </div>
                   </div>
                   <div class="filter__field">
-                    <p class="filter__title">Назначение велосипеда<a href="#" data-title="Справочная информация" class="hint">?</a></p>
+                    <!-- -------------Changes------------- -->
+                    <p class="filter__title">Назначение велосипеда<span data-title="Справочная информация" class="hint">?</span></p>
                     <div class="filter__selection">
                       <div class="filter__columns">
                         <div class="filter__check">
@@ -2684,10 +2686,14 @@
 
   <script>
     //Filter
-    $('.filter__title').click(function() {
-      $(this).next().slideToggle();
-      $(this).toggleClass('filter__title--top');
-    })
+    $('.filter__title').click(function(e) {
+      if(e.target.tagName.toLowerCase() === 'span') {
+          return;
+      } else {
+          $(this).next().slideToggle();
+          $(this).toggleClass('filter__title--top');
+      }
+    });
 
     if (window.innerWidth < 1201) {
       $('.filter__btn').click(function(e) {
