@@ -1497,8 +1497,9 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
+  /* -----------Changes-------- */
   .menu__item:hover .menu__dropdown {
-    display: block;
+    display: flex;
   }
   .menu__item:hover .menu__link::before {
     width: 100%;
@@ -1506,14 +1507,17 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
+  /* -----------Changes-------- */
   .menu__item--active .menu__dropdown {
-    display: block;
+    display: flex;
   }
+  /*-------------Changes------------*/
   .menu__columns {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    margin-left: auto;
+    width: max-content;
     height: 100%;
   }
   .menu__columns--velo .menu__column {
@@ -1526,14 +1530,35 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  /* --------------Changes------------- 
+  Также добавить в разметке класс is_filter к колонке с фильтрами пример в файле index_html */
   .menu__column {
     width: 50%;
     padding: 30px 0;
     background-color: #fff;
     border-left: 3px solid rgba(134, 149, 173, 0.2);
-    /*---------Changes---------*/
-    &.right{
-        text-align: end;
+    &.is_filter {
+      max-width: 160px;
+      border-left: 1px solid rgba(134, 149, 173, 0.2);
+      .menu__title {
+        font-weight: 400;
+        opacity: 0.6;
+      }
+      .menu__sublist {
+        .menu__subitem {
+          &.menu__subitem--active {
+            .menu__sublink::before {
+              height: 0;
+            }
+          }
+          .menu__sublink {
+            &::after {
+              background-image: none;
+            }
+          }
+        }
+      }
     }
   }
   .menu__column:nth-child(2) .menu__sublink::after,
@@ -1851,14 +1876,15 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  /* ----------------Changes--------------- */
   .menu__drop {
     display: none;
     position: absolute;
     z-index: 10;
-    left: 280px;
+    left: 480px;
     top: 0;
     bottom: 0;
-    width: 1133px;
+    width: 960px;
     padding: 0;
     background-color: #fff;
     border-left: 1px solid rgba(134, 149, 173, 0.2);
@@ -1877,7 +1903,6 @@
     height: 100%;
     overflow: hidden;
     position: relative;
-    margin-left: auto;
 }
 .menu__img img{
     position: absolute;
@@ -6896,9 +6921,12 @@
     .menu__block--short {
       width: 224px;
     }
+
+
+    /* -----------Changes---------- */
     .menu__drop,
     .menu__item--catalog .menu__drop {
-      width: calc(100vw - 337px);
+      width: calc(100vw - 530px);
     }
     .order {
       margin-top: 0;
@@ -9912,4 +9940,43 @@
    /* -------------Changes------------- */
   .tooltipster-base {
     font-size: 14px;
+  }
+/* -------------Changes------------- */
+  .chapter {
+    padding: 30px 20px;
+    width: 200px;
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    border-right: 3px solid rgba(134, 149, 173, 0.2);
+    .chapter_title {
+      position: relative;
+      width: 100%;
+      font-weight: 700;
+      color: var(--season-color);
+      padding: 5px 0;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        right: 20px;
+        width: 7px;
+        height: 9px;
+        background-image: url(../img/icons/angle-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -10px;
+        height: 100%;
+        width: 3px;
+        background-color: var(--season-color);
+      }
+    }
   }
