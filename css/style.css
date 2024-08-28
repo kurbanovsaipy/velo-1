@@ -1534,13 +1534,17 @@
   /* --------------Changes------------- 
   Также добавить в разметке класс is_filter к колонке с фильтрами пример в файле index_html */
   .menu__column {
-    width: 50%;
+    flex: 1;
+    width: 100%;
     padding: 30px 0;
     background-color: #fff;
     border-left: 3px solid rgba(134, 149, 173, 0.2);
     &.is_filter {
-      max-width: 160px;
-      border-left: 1px solid rgba(134, 149, 173, 0.2);
+      max-width: 200px;
+      border-left: 3px solid rgba(134, 149, 173, 0.2);
+      @media screen and (max-width: 1400px) {
+        max-width: 170px;
+      }
       .menu__title {
         font-weight: 400;
         opacity: 0.6;
@@ -1760,6 +1764,8 @@
       left: 5px;
     }
   }
+
+  /* -----------Changes---------- */
   .menu__dropdown {
     display: none;
     position: absolute;
@@ -1767,12 +1773,14 @@
     left: 0;
     width: 1440px;
     height: 720px;
+    opacity: 0;
     background-color: #fff;
     -webkit-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    animation: Open 0.5s forwards;
   }
   .menu__field {
-    width: 307px;
+    width: 270px;
     height: 100%;
     padding: 30px 0;
     background-color: #fff;
@@ -1836,6 +1844,8 @@
     display: -ms-flexbox;
     display: flex;
   }
+
+  /* --------------Changes---------------- */
   .menu__sublink {
     position: relative;
     display: block;
@@ -1848,7 +1858,6 @@
     &.title {
       color: var(--season-color);
     }
-    /* --------------Changes---------------- */
     &::before {
       content: '';
       position: absolute;
@@ -1886,29 +1895,29 @@
     display: none;
     position: absolute;
     z-index: 10;
-    left: 480px;
+    left: 520px;
     top: 0;
     bottom: 0;
-    width: 960px;
+    width: 920px;
     padding: 0;
     background-color: #fff;
-    border-left: 1px solid rgba(134, 149, 173, 0.2);
   }
   .menu__drop--img {
     padding: 20px;
     width: 519px;
   }
+  
 
   /* -------------------Changes--------------- */
   .menu__img{
     display:block;
-    min-width: 500px;
     width:100%;
-    max-width: 500px;
     height: 100%;
     overflow: hidden;
     position: relative;
+    min-width: 350px;
 }
+ /* -------------------Changes--------------- */
 .menu__img img{
     position: absolute;
     top: 0;
@@ -1919,8 +1928,8 @@
     object-position: center;
     padding: 0 20px;
 }
-
-@media screen and (max-width: 1300px){.menu__img{min-width: 400px;}}
+ /* -------------------Changes--------------- */
+@media screen and (max-width: 1400px){.menu__img{min-width: 300px;}}
 
   .mm-spn.mm-spn--navbar:after {
     content: "Каталог";
@@ -1947,6 +1956,8 @@
     display:none;
     -webkit-box-shadow:0px 4px 30px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    animation: Open 0.5s forwards;
   }
 
   /*---------------Changes---------------*/
@@ -6931,7 +6942,7 @@
     /* -----------Changes---------- */
     .menu__drop,
     .menu__item--catalog .menu__drop {
-      width: calc(100vw - 530px);
+      width: calc(100vw - 570px);
     }
     .order {
       margin-top: 0;
@@ -9949,11 +9960,12 @@
 /* -------------Changes------------- */
   .chapter {
     padding: 30px 20px;
-    width: 200px;
+    padding-right: 0;
+    width: 270px;
     background-color: #fff;
     position: relative;
     z-index: 10;
-    border-right: 3px solid rgba(134, 149, 173, 0.2);
+    border-right: 1px solid rgba(134, 149, 173, 0.2);
     .chapter_title {
       position: relative;
       width: 100%;
@@ -9983,5 +9995,26 @@
         width: 3px;
         background-color: var(--season-color);
       }
+    }
+  }
+
+ /*---------------Changes----------- 
+      Добавляем класс last к элементу если это конечный подраздел
+      так же поменять в самой разметке пример в index.html
+    */
+  .menu__subitem.last {
+    .menu__sublink::after {
+      background-image: none;
+    }
+  } 
+
+
+   /* ----------------Changes--------------- */
+   @keyframes Open {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
