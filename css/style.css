@@ -1552,6 +1552,11 @@
               height: 0;
             }
           }
+          &:hover {
+            .menu__sublink::before {
+              height: 0;
+            }
+          }
           .menu__sublink {
             &::after {
               background-image: none;
