@@ -1516,7 +1516,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: end;
     width: 100%;
     height: 100%;
   }
@@ -1524,7 +1524,7 @@
     
   }
   /* ------------Changes----------- */
-  .menu__columns--velo .menu__column:last-child {
+  /* .menu__columns--velo .menu__column:last-child {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
@@ -1532,8 +1532,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     max-width: 450px;
-    margin-left: auto;
-  }
+  } */
 
   /* --------------Changes------------- 
   Также добавить в разметке класс is_filter к колонке с фильтрами пример в файле index_html */
@@ -1543,9 +1542,15 @@
     padding: 30px 0;
     background-color: #fff;
     border-left: 3px solid rgba(134, 149, 173, 0.2);
+    /*--------------Класс для блока с картинкой------------*/
+    &.image_column {
+      max-width: 450px;
+    }
     &.is_filter {
       border-left: 3px solid rgba(134, 149, 173, 0.2);
-      max-width: 220px;
+      flex: 2;
+      padding: 30px 0;
+      /* max-width: 170px; */
       @media screen and (max-width: 1400px) {
         
       }
@@ -4951,8 +4956,7 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
-  /*---------- Changes ---------- */
-  .hint::before {
+  /* .hint::before {
     content: attr(data-title);
     position: absolute;
     bottom: calc(100% + 5px);
@@ -4972,20 +4976,20 @@
     line-height: 17px;
     word-break: break-word;
     display: none;
-  }
-  /* -----------Changes----------- */
-  .hint:hover {
-    color: var(--season-color);
-    border-color: var(--season-color);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+  } */
+   
+  /* .hint:hover {
+    color: var(--season-color);
+    border-color: var(--season-color);
   }
 
-  /* -----------Changes----------- */
   .hint:hover::before {
     display: block;
     color: #fff;
-  } 
+  }  */
+  
   .hint-custom {
     /* content: attr(data-title); */
     /* position: absolute; */
@@ -10011,6 +10015,14 @@
       background-image: none;
     }
   } 
+
+/*---------------Chahges----------- Новый контейнер для фильтров также обернуть в меню пример в файле index html*/
+  .filter_container {
+    display: flex;
+    width: 100%;
+    flex: 1;
+    max-width: 360px;
+  }
 
 
    /* ----------------Changes--------------- */
