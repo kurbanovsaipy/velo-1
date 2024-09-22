@@ -2898,6 +2898,10 @@
   .catalog__text ul li {
     margin-right: 10px;
   }
+  /*------------Changes2------------*/
+  .catalog__param {
+    position: relative;
+  }
   .catalog__param p {
     margin-top: 0;
     margin-bottom: 5px;
@@ -2941,24 +2945,28 @@
     border-radius: 0 0 0 4px;
   }
   /*-------------Changes2-----------*/
+  /* <!-- Изменяем положение блока с всплывающим окном теперь он находится внутри блока с классом catalog__param --> */
+  /* Пример в файле catalog.html */
   .catalog__drop {
     position: absolute;
-    width: 100%;
-    top: 100%;
+    width: calc(100% + 40px);
+    top: 0;
     left: 0;
     z-index: 10;
+    margin-left: -20px;
     background-color: #fff;
     -webkit-box-shadow: 0px 24px 30px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 24px 30px 0px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 4px 4px;
     display: none;
   }
+
   /*-------------Changes2-----------*/
   .catalog__item .catalog__drop {
     margin-top: 0;
-    @media screen and (max-width: 768px) {
-      margin-left: 0;
-      margin-right: 0;
+    @media screen and (max-width: 700px) {
+      width: calc(100% + 20px);
+      margin-left: -10px;
     }
   }
   /* change */
