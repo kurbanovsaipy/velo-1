@@ -4992,7 +4992,11 @@
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
-  /* .hint::before {
+
+  /*-------------Changes2--------*/
+  /* Добавить класс is_filter к элементам со справочной информацией в фильтре */
+  /* Пример в файле catalog.html */
+  .hint.is_filter::before {  
     content: attr(data-title);
     position: absolute;
     bottom: calc(100% + 5px);
@@ -5014,17 +5018,21 @@
     display: none;
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
-  } */
+  }
+
+  /*-------------Changes2--------*/
+  /* Добавить класс is_filter к элементам со справочной информацией в фильтре */
+  /* Пример в файле catalog.html */
+  .hint.is_filter:hover::before { 
+    display: block;
+    color: #fff;
+  } 
    
   /* .hint:hover {
     color: var(--season-color);
     border-color: var(--season-color);
-  }
+  }*/
 
-  .hint:hover::before {
-    display: block;
-    color: #fff;
-  }  */
   
   .hint-custom {
     /* content: attr(data-title); */
