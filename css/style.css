@@ -9,6 +9,11 @@
    * 1. Change the default font family in all browsers (opinionated).
    * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
    */
+
+   /*------------Changes2-----------*/
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
   html {
     font-family: sans-serif;
     /* 1 */
@@ -1542,6 +1547,27 @@
     padding: 30px 0;
     background-color: #fff;
     border-left: 3px solid rgba(134, 149, 173, 0.2);
+    overflow: auto;
+
+    /* --------------Changes2------------- */
+    &::-webkit-scrollbar {
+      height: 4px;
+      width: 4px;
+    }
+
+    /* --------------Changes2------------- */
+    &::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid var(--season-color);
+      border-radius: 2px;
+    }
+
+    /* --------------Changes2------------- */
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--season-color);
+      border-radius: 2px;
+      border: 0;
+    }
     /*--------------Класс для блока с картинкой------------*/
     &.image_column {
       max-width: 450px;
@@ -1897,7 +1923,7 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-  /* ----------------Changes--------------- */
+  /* ----------------Changes2--------------- */
   .menu__drop {
     display: none;
     position: absolute;
@@ -1908,6 +1934,7 @@
     width: 920px;
     padding: 0;
     background-color: #fff;
+    overflow: hidden;
   }
   .menu__drop--img {
     padding: 20px;
@@ -1952,7 +1979,7 @@
     padding: 0;
   }
 
-  /* -------------Changes---------- */
+  /* -------------Changes2---------- */
   .header__dropmenu{
     width: 1440px;
     position:absolute;
@@ -1965,6 +1992,7 @@
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.15);
     opacity: 0;
     animation: Open 0.5s forwards;
+    overflow: hidden;
   }
 
   /*---------------Changes---------------*/
@@ -2037,6 +2065,10 @@
     color: var(--season-color);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+    /*-------------Changes2-------------*/
+    &::before {
+      height: calc(100% - 6px);
+    }
   }
   .catalog__menu__col__item.level-2.active {
     display: block;
@@ -2908,25 +2940,21 @@
   .catalog__btn {
     border-radius: 0 0 0 4px;
   }
+  /*-------------Changes2-----------*/
   .catalog__drop {
     position: absolute;
+    width: 100%;
     top: 100%;
     left: 0;
-    right: 0;
     z-index: 10;
-    margin-top: -20px;
     background-color: #fff;
     -webkit-box-shadow: 0px 24px 30px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 24px 30px 0px rgba(0, 0, 0, 0.15);
     border-radius: 0 0 4px 4px;
     display: none;
   }
-  /* change */
+  /*-------------Changes2-----------*/
   .catalog__item .catalog__drop {
-    top: 0 !important;
-    bottom: initial !important;
-    margin-left: -20px;
-    margin-right: -20px;
     margin-top: 0;
     @media screen and (max-width: 768px) {
       margin-left: 0;
@@ -5731,13 +5759,16 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .card__item:first-child::before {
+  /* ----------------Changes2---------------- */
+  /* Добавить соответствующий класс к каждому полю. Теперь иконку будут добавляться не по порядку а поклассу */
+  /* Пример в файле card.html */
+  .card__item.connection::before {
     background-image: url(../img/icons/phone-call.svg);
   }
-  .card__item:nth-child(2)::before {
+  .card__item.installment::before {
     background-image: url(../img/icons/sber.svg);
   }
-  .card__item:nth-child(3)::before {
+  .card__item.delivery::before {
     background-image: url(../img/icons/delivery.svg);
   }
   .card__item span {
@@ -7820,8 +7851,9 @@
       -o-object-position: right;
          object-position: right;
     }
+    /*-------------Changes2-----------*/
     .catalog__item .catalog__drop {
-      top: 380px;
+      /* top: 380px; */
     }
     .master__wrap {
       display: block;
@@ -8286,8 +8318,9 @@
       padding-left: 10px;
       padding-right: 10px;
     }
+    /*-------------Changes2-----------*/
     .catalog__item .catalog__drop {
-      top: 360px;
+      /* top: 360px; */
     }
     .catalog__list {
       margin-left: -15px;
@@ -8569,8 +8602,9 @@
     .mm-ocd__content {
       width: 80% !important;
     }
+    /*-------------Changes2-----------*/
     .catalog__item .catalog__drop {
-      top: 375px;
+      /* top: 375px; */
     }
   }
   @media (max-width: 480px) {
@@ -9402,8 +9436,9 @@
       padding-right: 10px;
       margin-bottom: 10px;
     }
+    /*-------------Changes2-----------*/
     .catalog__item .catalog__drop {
-      top: 250px;
+      /* top: 250px; */
     }
     .master__info {
       margin-top: 0;
